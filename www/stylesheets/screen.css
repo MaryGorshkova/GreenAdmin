@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 8, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,62 @@
   vertical-align: baseline;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 html {
   font: 80%/1.4em Helvetica, Arial, sans-serif;
+}
+
+/* line 22, ../sass/screen.scss */
+#header {
+  height: 50px;
+  color: #e1e1e1;
+  background-color: #205527;
+  border-bottom: 1px solid #ffffff;
+}
+/* line 28, ../sass/screen.scss */
+#header #user {
+  float: right;
+}
+/* line 31, ../sass/screen.scss */
+#header #user .login {
+  width: 53px;
+  height: 24px;
+  padding: 7px;
+  margin: 13px 20px 12px;
+  border: 1px solid #79997d;
+  border-radius: 4px;
+}
+/* line 41, ../sass/screen.scss */
+#header .logo {
+  padding: 9px 18px 14px 17px;
+  height: 100%;
+  margin-left: 9px;
+  border-left: 1px solid #008f00;
+  border-right: 1px solid #008f00;
+  background-color: #008200;
+}
+/* line 50, ../sass/screen.scss */
+#header .menu_items {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 14px;
+}
+/* line 55, ../sass/screen.scss */
+#header .menu_items span {
+  padding: 5px 10px;
+  font-size: 11px;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 61, ../sass/screen.scss */
+#header .menu_items span div {
+  padding: 0;
+  display: inline-block;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: -1px;
+}
+/* line 70, ../sass/screen.scss */
+#header .menu_items .selected {
+  border-radius: 4px;
+  background-color: #163b1b;
 }

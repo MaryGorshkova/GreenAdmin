@@ -5,6 +5,8 @@
 
 //@import "compass/reset";
 
+$green: #205527;
+
 *{
 	margin: 0;
 	padding: 0;
@@ -15,5 +17,62 @@
 
 html{
 	font: 80%/1.4em Helvetica, Arial, sans-serif;
+}
+
+#header{
+	height: 50px;
+	color: #e1e1e1;
+	background-color: $green;
+	border-bottom: 1px solid #ffffff;
+
+	#user{
+		float: right;
+
+		.login{
+			width: 53px;
+			height: 24px;
+			padding: 7px;
+			margin: 13px 20px 12px; 
+			border: 1px solid #79997d;
+			border-radius: 4px;
+		}
+	}
+
+	.logo{
+		padding: 9px 18px 14px 17px;
+		height: 100%;
+		margin-left: 9px;
+		border-left: 1px solid #008f00;
+		border-right: 1px solid #008f00;
+		background-color: #008200;
+	}
+
+	.menu_items{
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 14px;
+
+		span{
+			padding: 5px 10px;
+			font-size: 11px;
+			vertical-align: middle;
+			display: inline-block;
+
+			div{
+				padding: 0;
+				display: inline-block;
+				border-bottom: 1px solid #e1e1e1;
+				padding-bottom: -1px;
+				// text-decoration: underline;
+			}
+		}
+
+		.selected{
+			border-radius: 4px;
+			background-color: #163b1b;
+		}
+
+	}
+
 }
 
