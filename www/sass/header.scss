@@ -1,0 +1,87 @@
+
+$green: #205527;
+
+@mixin under_line{
+	div{
+		padding: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+	.line{
+		height: 1px;
+		width: 100%;
+		padding: 0;
+		color: #ffffff;
+		display: block;
+		vertical-align: 100%;
+		background-color: #ffffff;
+		position: absolute;
+		top: 15px;
+		right: 0px;
+	}
+}
+
+#header{
+	height: 50px;
+	color: #e1e1e1;
+	background-color: $green;
+	border-bottom: 1px solid #ffffff;
+	box-shadow: 0 0 10px #dbdbdb;
+
+	#user{
+		float: right;
+		margin-top: 13px;
+		margin-right: 20px;
+
+		img{
+			vertical-align: middle;
+		}
+
+		.login{
+			width: 53px;
+			height: 24px;
+			padding: 3px 6px;
+			margin-left: 12px; 
+			border: 1px solid #79997d;
+			border-radius: 5px;
+			display: inline-block;
+		}
+
+		@include under_line;
+	}
+
+	.logo{
+		padding: 9px 18px 14px 17px;
+		height: 100%;
+		margin-left: 9px;
+		border-left: 1px solid #008f00;
+		border-right: 1px solid #008f00;
+		background-color: #008200;
+	}
+
+	.menu_items{
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 14px;
+		cursor: default;
+
+		span{
+			padding: 3px 10px 4px 10px;
+			font-size: 11px;
+			vertical-align: middle;
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+
+			@include under_line;
+		}
+
+		.selected{
+			border-radius: 5px;
+			background-color: #163b1b;
+		}
+
+	}
+
+}
