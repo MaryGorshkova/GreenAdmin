@@ -1,0 +1,26 @@
+html, body{
+	height: 100%;
+}
+
+.form{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.inner{
+	display:table-row;
+}
+
+#main_form{
+	display: table-cell;
+	height: 100%;
+	background-color: #efefef;	
+}
+
+#side_items{
+	display: table-cell;
+	width: 82px;
+	height: 100%;
+	background-color: #e3e3e3;
+}

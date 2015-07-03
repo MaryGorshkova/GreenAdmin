@@ -99,7 +99,39 @@
   background-color: #163b1b;
 }
 
-/* line 11, ../sass/screen.scss */
+/* line 1, ../sass/options.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../sass/options.scss */
+.form {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 11, ../sass/options.scss */
+.inner {
+  display: table-row;
+}
+
+/* line 15, ../sass/options.scss */
+#main_form {
+  display: table-cell;
+  height: 100%;
+  background-color: #efefef;
+}
+
+/* line 21, ../sass/options.scss */
+#side_items {
+  display: table-cell;
+  width: 82px;
+  height: 100%;
+  background-color: #e3e3e3;
+}
+
+/* line 12, ../sass/screen.scss */
 * {
   margin: 0;
   padding: 0;
@@ -108,7 +140,7 @@
   vertical-align: baseline;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 html {
   font: 80%/1.4em Helvetica, Arial, sans-serif;
 }
