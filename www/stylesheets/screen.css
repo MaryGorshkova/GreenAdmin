@@ -34,7 +34,7 @@ html {
   padding: 7px;
   margin: 13px 20px 12px;
   border: 1px solid #79997d;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 /* line 41, ../sass/screen.scss */
 #header .logo {
@@ -53,20 +53,34 @@ html {
 }
 /* line 55, ../sass/screen.scss */
 #header .menu_items span {
-  padding: 5px 10px;
+  padding: 3px 10px 4px 10px;
   font-size: 11px;
   vertical-align: middle;
   display: inline-block;
+  position: relative;
+  cursor: pointer;
 }
-/* line 61, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 #header .menu_items span div {
   padding: 0;
   display: inline-block;
-  border-bottom: 1px solid #e1e1e1;
-  padding-bottom: -1px;
+  position: relative;
 }
-/* line 70, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
+#header .menu_items span .line {
+  height: 1px;
+  width: 100%;
+  padding: 0;
+  color: #ffffff;
+  display: block;
+  vertical-align: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+}
+/* line 84, ../sass/screen.scss */
 #header .menu_items .selected {
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: #163b1b;
 }
