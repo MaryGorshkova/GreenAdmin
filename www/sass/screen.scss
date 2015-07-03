@@ -7,6 +7,28 @@
 
 $green: #205527;
 
+@mixin under_line{
+	div{
+		padding: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+	.line{
+		height: 1px;
+		width: 100%;
+		padding: 0;
+		color: #ffffff;
+		display: block;
+		vertical-align: 100%;
+		background-color: #ffffff;
+		position: absolute;
+		top: 15px;
+		right: 0px;
+	}
+}
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -24,18 +46,28 @@ html{
 	color: #e1e1e1;
 	background-color: $green;
 	border-bottom: 1px solid #ffffff;
+	box-shadow: 0 0 10px #dbdbdb;
 
 	#user{
 		float: right;
+		margin-top: 13px;
+		margin-right: 20px;
+
+		img{
+			vertical-align: middle;
+		}
 
 		.login{
 			width: 53px;
 			height: 24px;
-			padding: 7px;
-			margin: 13px 20px 12px; 
+			padding: 3px 6px;
+			margin-left: 12px; 
 			border: 1px solid #79997d;
 			border-radius: 5px;
+			display: inline-block;
 		}
+
+		@include under_line;
 	}
 
 	.logo{
@@ -51,6 +83,7 @@ html{
 		display: inline-block;
 		vertical-align: top;
 		margin-top: 14px;
+		cursor: default;
 
 		span{
 			padding: 3px 10px 4px 10px;
@@ -60,25 +93,7 @@ html{
 			position: relative;
 			cursor: pointer;
 
-			div{
-				padding: 0;
-				display: inline-block;
-				position: relative;
-			}
-
-			.line{
-				height: 1px;
-				width: 100%;
-				// margin: 0 10px 0 10px;
-				padding: 0;
-				color: #ffffff;
-				display: block;
-				vertical-align: 100%;
-				background-color: #ffffff;
-				position: absolute;
-				top: 15px;
-				right: 0px;
-			}
+			@include under_line;
 		}
 
 		.selected{
