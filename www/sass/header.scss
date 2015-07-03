@@ -24,10 +24,12 @@ $green: #205527;
 
 #header{
 	height: 50px;
+	width: 100%;
 	color: #e1e1e1;
 	background-color: $green;
 	border-bottom: 1px solid #ffffff;
-	box-shadow: 0 0 10px #dbdbdb;
+	box-shadow: 0 5px 10px #dbdbdb;
+	position: fixed;
 
 	#user{
 		float: right;

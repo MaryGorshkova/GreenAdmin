@@ -29,3 +29,14 @@ html, body {
   height: 100%;
   background-color: #e3e3e3;
 }
+
+/* line 28, ../sass/options.scss */
+#footer {
+  position: fixed;
+  left: 82px;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 -5px 10px #dbdbdb;
+}

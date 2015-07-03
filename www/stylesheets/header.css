@@ -1,22 +1,24 @@
 /* line 25, ../sass/header.scss */
 #header {
   height: 50px;
+  width: 100%;
   color: #e1e1e1;
   background-color: #205527;
   border-bottom: 1px solid #ffffff;
-  box-shadow: 0 0 10px #dbdbdb;
+  box-shadow: 0 5px 10px #dbdbdb;
+  position: fixed;
 }
-/* line 32, ../sass/header.scss */
+/* line 34, ../sass/header.scss */
 #header #user {
   float: right;
   margin-top: 13px;
   margin-right: 20px;
 }
-/* line 37, ../sass/header.scss */
+/* line 39, ../sass/header.scss */
 #header #user img {
   vertical-align: middle;
 }
-/* line 41, ../sass/header.scss */
+/* line 43, ../sass/header.scss */
 #header #user .login {
   width: 53px;
   height: 24px;
@@ -45,7 +47,7 @@
   top: 15px;
   right: 0px;
 }
-/* line 54, ../sass/header.scss */
+/* line 56, ../sass/header.scss */
 #header .logo {
   padding: 9px 18px 14px 17px;
   height: 100%;
@@ -54,14 +56,14 @@
   border-right: 1px solid #008f00;
   background-color: #008200;
 }
-/* line 63, ../sass/header.scss */
+/* line 65, ../sass/header.scss */
 #header .menu_items {
   display: inline-block;
   vertical-align: top;
   margin-top: 14px;
   cursor: default;
 }
-/* line 69, ../sass/header.scss */
+/* line 71, ../sass/header.scss */
 #header .menu_items span {
   padding: 3px 10px 4px 10px;
   font-size: 11px;
@@ -89,7 +91,7 @@
   top: 15px;
   right: 0px;
 }
-/* line 80, ../sass/header.scss */
+/* line 82, ../sass/header.scss */
 #header .menu_items .selected {
   border-radius: 5px;
   background-color: #163b1b;
