@@ -31,6 +31,8 @@ $green: #205527;
 	box-shadow: 0 5px 10px #dbdbdb;
 	position: fixed;
 
+	span{cursor: default;}
+
 	#user{
 		float: right;
 		margin-top: 13px;
@@ -66,7 +68,6 @@ $green: #205527;
 		display: inline-block;
 		vertical-align: top;
 		margin-top: 14px;
-		cursor: default;
 
 		span{
 			padding: 3px 10px 4px 10px;
