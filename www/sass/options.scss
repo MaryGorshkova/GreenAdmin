@@ -215,4 +215,35 @@ html, body{
 			i{left: 151px;};
 		}
 	}
+
+	.checks{
+		margin-top: 12px;
+
+		span{
+			position: relative;
+			padding-left: 25px;
+			margin-right: 13px;
+
+			div{
+				width: 20px; height: 20px;				
+				border: 1px  solid #aeaeae;
+				border-radius: 2px;
+				display: inline-block;
+				position: absolute;
+				left: 0px;
+				top: -3px;
+
+				i{
+					width: 13px; height: 10px;
+					background-image: url('../images/small_check.png');
+					repeat: no-repeat;
+					display: inline-block;
+					position: absolute;
+					left: 3px;
+					top: 3px;
+				}
+			}
+		}
+
+	}
 }

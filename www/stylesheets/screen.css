@@ -341,6 +341,38 @@ html, body {
 #filter .row .distr i, #filter .row .state i {
   left: 151px;
 }
+/* line 219, ../sass/options.scss */
+#filter .checks {
+  margin-top: 12px;
+}
+/* line 222, ../sass/options.scss */
+#filter .checks span {
+  position: relative;
+  padding-left: 25px;
+  margin-right: 13px;
+}
+/* line 227, ../sass/options.scss */
+#filter .checks span div {
+  width: 20px;
+  height: 20px;
+  border: 1px  solid #aeaeae;
+  border-radius: 2px;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: -3px;
+}
+/* line 236, ../sass/options.scss */
+#filter .checks span div i {
+  width: 13px;
+  height: 10px;
+  background-image: url("../images/small_check.png");
+  repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
 
 /* line 2, ../sass/side_menu.scss */
 #side_items {
