@@ -55,6 +55,90 @@ html, body{
 	}
 }
 
+.button{
+	border: 1px solid #79997d;
+	border-radius: 4px;
+	padding: 3px 5px;
+	display: inline-block;
+	position: relative;
+	padding-left: 21px;
+	font-size: 89%;
+	color: #205527;
+
+}
+
+#excel_options{
+	margin-top: 7px;
+	float: right;
+
+	i{
+		background-image: url('../images/load.png');
+	  	background-repeat: no-repeat;
+	  	display: inline-block;
+	  	height: 15px;
+	  	width: 15px;
+	  	position: absolute;
+	  	left: 3px;
+	}
+
+	.upl {
+	  background-position: 0 0;
+	}
+
+	.dnl {
+	  background-position: 0 -15px;
+	}
+}
+
+#title{
+	margin-top: 7px;
+
+	h3{
+		font-size: 17px;
+		display: inline-block;
+	}
+
+	.month{
+		position: relative;
+		display: inline-block;
+
+		i{
+			width: 9px; height: 6px;
+			background-image: url('../images/arrow.png');
+			background-repeat: no-repeat;
+			position: absolute;
+			display: inline-block;
+			left: 120px;
+			top: 10px;
+		}
+
+		select{
+			width: 132px; height: 24px;
+			margin-left: 10px;
+			border: 1px solid #aeaeae;
+			border-radius: 4px;
+			box-shadow: 0 0 5px #c4c4c4 inset;
+			padding: 3px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			background: linear-gradient(#fefefe, #e6e6e6);
+			outline: none;
+		}
+	}
+	
+	.check{
+		background-image: url('../images/check.png');
+	  	background-repeat: no-repeat;
+	  	display: inline-block;
+	  	height: 12px;
+	  	width: 12px;
+	  	position: absolute;
+	  	left: 5px;
+	  	top: 5px;
+	}
+	
+}
+
 #footer{
 	position: fixed;
 	left: 82px; bottom: 0;
@@ -63,3 +147,7 @@ html, body{
 	background-color: #ffffff;
 	box-shadow: 0 -5px 10px #dbdbdb;
 }
+
+@import "compass/utilities/sprites";
+@import "load/*.png";
+@include all-load-sprites;

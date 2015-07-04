@@ -36,7 +36,7 @@
 				<div class="line"></div>
 				<div class="s_item common"><div class="rect"><i></i></div><br>Extra</div>
 			</div>
-			<div id="main_form">
+			<form id="main_form">
 				<div id="options">
 					<div id="navigation">
 						<span>Second menu item<div class="line"></div></span>
@@ -46,10 +46,29 @@
 						<span class="current">Бюджет</span>
 					</div>
 					<div id="excel_options">
-						<span class="upl">Выгрузить в Excel</span>
-						<span class="dnl">Загрузить из Excel</span>
+						<span class="button"><i class="upl"></i>Выгрузить в Excel</span>
+						<span class="button"><i class="dnl"></i>Загрузить из Excel</span>
 					</div>
-					<div id="title">Бюджет<span class="month"></span><span class="commit"></span></div>
+					<div id="title"><h3>Бюджет</h3>
+						<div class="month">
+							<i></i>
+							<select>
+							<option value="jan">Январь 2015</option>
+							<option value="feb">Февраль 2015</option>
+							<option value="mrt">Март 2015</option>
+							<option value="apr">Апрель 2015</option>
+							<option value="may">Май 2015</option>
+							<option value="jun">Июнь 2015</option>
+							<option value="jul">Июль 2015</option>
+							<option value="aug">Август 2015</option>
+							<option value="spt">Сентябрь 2015</option>
+							<option value="oct">Октябрь 2015</option>
+							<option value="nvb">Ноябрь 2015</option>
+							<option value="dcb">Декабрь 2015</option>
+						</select>
+						</div>						
+						<span class="button"><i class="check"></i>Закрыть версию</span>
+					</div>
 					<section id="filter">
 						<div>Фильтровать результаты</div>
 						<div class="row">
@@ -65,7 +84,7 @@
 				</div>
 				<div class="budget"></div>			
 				<div id="footer"><span>Сохранить изменения</span></div>
-			</div>			
+			</form>			
 		</div>
 	</div>
 </body>

@@ -62,6 +62,93 @@ html, body {
 }
 
 /* line 58, ../sass/options.scss */
+.button {
+  border: 1px solid #79997d;
+  border-radius: 4px;
+  padding: 3px 5px;
+  display: inline-block;
+  position: relative;
+  padding-left: 21px;
+  font-size: 89%;
+  color: #205527;
+}
+
+/* line 70, ../sass/options.scss */
+#excel_options {
+  margin-top: 7px;
+  float: right;
+}
+/* line 74, ../sass/options.scss */
+#excel_options i {
+  background-image: url("../images/load.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: 3px;
+}
+/* line 84, ../sass/options.scss */
+#excel_options .upl {
+  background-position: 0 0;
+}
+/* line 88, ../sass/options.scss */
+#excel_options .dnl {
+  background-position: 0 -15px;
+}
+
+/* line 93, ../sass/options.scss */
+#title {
+  margin-top: 7px;
+}
+/* line 96, ../sass/options.scss */
+#title h3 {
+  font-size: 17px;
+  display: inline-block;
+}
+/* line 101, ../sass/options.scss */
+#title .month {
+  position: relative;
+  display: inline-block;
+}
+/* line 105, ../sass/options.scss */
+#title .month i {
+  width: 9px;
+  height: 6px;
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: inline-block;
+  left: 120px;
+  top: 10px;
+}
+/* line 115, ../sass/options.scss */
+#title .month select {
+  width: 132px;
+  height: 24px;
+  margin-left: 10px;
+  border: 1px solid #aeaeae;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #c4c4c4 inset;
+  padding: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: linear-gradient(#fefefe, #e6e6e6);
+  outline: none;
+}
+/* line 129, ../sass/options.scss */
+#title .check {
+  background-image: url("../images/check.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+/* line 142, ../sass/options.scss */
 #footer {
   position: fixed;
   left: 82px;
@@ -70,4 +157,20 @@ html, body {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 -5px 10px #dbdbdb;
+}
+
+/* line 56, load/*.png */
+.load-sprite, .load-down, .load-up {
+  background-image: url('/images/load-s4bffd48128.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.load-down {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.load-up {
+  background-position: 0 -15px;
 }
