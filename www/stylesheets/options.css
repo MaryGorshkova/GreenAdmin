@@ -21,10 +21,47 @@ html, body {
   height: 100%;
   background-color: #efefef;
   vertical-align: top;
-  padding-top: 65px;
+  padding-top: 58px;
 }
 
 /* line 24, ../sass/options.scss */
+#options {
+  padding: 0 18px;
+}
+/* line 27, ../sass/options.scss */
+#options span {
+  cursor: default;
+}
+
+/* line 32, ../sass/options.scss */
+#navigation {
+  color: #2a6ebb;
+}
+/* line 35, ../sass/options.scss */
+#navigation span {
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  font-size: 90%;
+}
+/* line 42, ../sass/options.scss */
+#navigation .line {
+  height: 1px;
+  width: 100%;
+  padding: 0;
+  display: block;
+  vertical-align: 100%;
+  background-color: #2a6ebb;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+}
+/* line 53, ../sass/options.scss */
+#navigation .current {
+  color: #727272;
+}
+
+/* line 58, ../sass/options.scss */
 #footer {
   position: fixed;
   left: 82px;

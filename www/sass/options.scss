@@ -18,7 +18,41 @@ html, body{
 	height: 100%;
 	background-color: #efefef;
 	vertical-align: top;
-	padding-top: 51+14px;	
+	padding-top: 51+7px;	
+}
+
+#options{
+	padding: 0 18px;
+
+	span{
+		cursor: default;
+	}
+}
+
+#navigation{
+	color: #2a6ebb;
+
+	span{
+		padding: 0;
+		display: inline-block;
+		position: relative;
+		font-size: 90%;
+	}
+
+	.line{
+		height: 1px;
+		width: 100%;
+		padding: 0;;
+		display: block;
+		vertical-align: 100%;
+		background-color: #2a6ebb;
+		position: absolute;
+		top: 15px;
+		right: 0px;
+	}
+	.current{
+		color: #727272;
+	}
 }
 
 #footer{
