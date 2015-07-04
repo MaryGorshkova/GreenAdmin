@@ -457,7 +457,61 @@ html, body {
   background-position: 0 -19px;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 2, ../sass/content.scss */
+#pages, #content {
+  font-size: 94%;
+  text-align: center;
+  width: 100%;
+  color: #205527;
+}
+
+/* line 9, ../sass/content.scss */
+#pages {
+  margin-top: 3px;
+}
+/* line 12, ../sass/content.scss */
+#pages em {
+  color: #8b8b8b;
+  font-weight: bold;
+  font-size: 110%;
+}
+/* line 18, ../sass/content.scss */
+#pages span {
+  margin: 0 2px;
+  position: relative;
+  display: inline-block;
+}
+/* line 24, ../sass/content.scss */
+#pages .selected {
+  background-color: #205527;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0 2px;
+}
+/* line 31, ../sass/content.scss */
+#pages .selected .line {
+  display: none;
+}
+/* line 34, ../sass/content.scss */
+#pages .space {
+  padding-left: 4px;
+}
+/* line 36, ../sass/content.scss */
+#pages .line {
+  height: 1px;
+  width: 100%;
+  padding: 0;
+  vertical-align: 100%;
+  border-top: 1px dashed #9cb19f;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 14, ../sass/screen.scss */
 * {
   margin: 0;
   padding: 0;
@@ -466,7 +520,7 @@ html, body {
   vertical-align: baseline;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 html {
   font: 80%/1.4em Helvetica, Arial, sans-serif;
 }

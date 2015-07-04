@@ -1,0 +1,49 @@
+
+#pages, #content{
+	font-size: 94%;
+	text-align: center;
+	width: 100%;
+	color: #205527;
+}
+
+#pages{
+	margin-top: 3px;
+	
+	em{
+		color: #8b8b8b;
+		font-weight: bold;
+		font-size: 110%;
+	}
+
+	span{
+		margin: 0 2px;
+		position: relative;
+		display: inline-block; 
+	}
+
+	.selected{
+		background-color: #205527;
+		border-radius: 5px;
+		color: #ffffff;
+		margin: 0;
+		padding: 0 2px;
+
+		.line{display: none;}
+	}
+
+	.space{padding-left: 4px;}
+
+	.line{
+		height: 1px;
+		width: 100%;
+		padding: 0;
+		vertical-align: 100%;
+		border-top: 1px dashed #9cb19f;
+		position: absolute;
+		top: 15px;
+		right: 0px;
+		text-align: center;
+		display: inline-block;
+	}
+
+}
