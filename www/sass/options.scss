@@ -94,36 +94,8 @@ html, body{
 	margin-top: 7px;
 
 	h3{
-		font-size: 17px;
+		font-size: 19px;
 		display: inline-block;
-	}
-
-	.month{
-		position: relative;
-		display: inline-block;
-
-		i{
-			width: 9px; height: 6px;
-			background-image: url('../images/arrow.png');
-			background-repeat: no-repeat;
-			position: absolute;
-			display: inline-block;
-			left: 120px;
-			top: 10px;
-		}
-
-		select{
-			width: 132px; height: 24px;
-			margin-left: 10px;
-			border: 1px solid #aeaeae;
-			border-radius: 4px;
-			box-shadow: 0 0 5px #c4c4c4 inset;
-			padding: 3px;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			background: linear-gradient(#fefefe, #e6e6e6);
-			outline: none;
-		}
 	}
 	
 	.check{
@@ -139,6 +111,34 @@ html, body{
 	
 }
 
+.listChoice{
+	position: relative;
+	display: inline-block;
+
+	i{
+		width: 9px; height: 6px;
+		background-image: url('../images/arrow.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		display: inline-block;
+		left: 120px;
+		top: 10px;
+	}
+
+	select{
+		width: 132px; height: 24px;
+		margin-left: 7px;
+		border: 1px solid #aeaeae;
+		border-radius: 4px;
+		box-shadow: 0 0 5px #c4c4c4 inset;
+		padding: 3px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background: linear-gradient(#fefefe, #e6e6e6);
+		outline: none;
+	}
+}
+
 #footer{
 	position: fixed;
 	left: 82px; bottom: 0;
@@ -148,6 +148,71 @@ html, body{
 	box-shadow: 0 -5px 10px #dbdbdb;
 }
 
-@import "compass/utilities/sprites";
-@import "load/*.png";
-@include all-load-sprites;
+// @import "compass/utilities/sprites";
+// @import "load/*.png";
+// @include all-load-sprites;
+
+#filter{
+	font-size: 93%;
+	margin-top: 17px;
+
+	div{
+		position: relative;
+	}
+
+	.title{
+		width: auto;
+		color: #acacac;
+		background-color: #efefef;
+		display: inline-block;
+		padding-right: 5px;
+		font-size: 90%;
+	}
+
+	.hrline{
+		width: 100%; height: 1px;
+		background-color: #dbdbdb;
+		top: 10px;
+	}
+
+	.row{
+		margin-top: 10px;
+
+		.search{
+			width: 250px; height: 24px;
+			border: 1px solid #aeaeae;
+			border-radius: 4px;
+			background-color: #f4f4f4;
+			padding: 3px;
+			display: inline-block;
+			box-shadow: inset 0 0 5px #c4c4c4;
+			color: #868686;
+			padding-left: 24px;
+
+			i{
+				width: 16px; height: 16px;
+				background-image: url('../images/search.png');
+				background-repeat: no-repeat;
+				display: inline-block;
+				position: absolute;
+				left: 5px;
+			}
+
+			input{
+				width: 100%;
+				height: 100%;
+				background-color: #f4f4f4;
+				outline: none;
+			}
+		}
+
+		.regions, .ASM {
+			select{width: 153px;}
+			i{left: 141px;};
+		}
+		.distr, .state{
+			select{width: 163px;}
+			i{left: 151px;};
+		}
+	}
+}

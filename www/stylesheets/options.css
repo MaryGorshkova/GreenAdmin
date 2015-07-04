@@ -103,40 +103,10 @@ html, body {
 }
 /* line 96, ../sass/options.scss */
 #title h3 {
-  font-size: 17px;
+  font-size: 19px;
   display: inline-block;
 }
 /* line 101, ../sass/options.scss */
-#title .month {
-  position: relative;
-  display: inline-block;
-}
-/* line 105, ../sass/options.scss */
-#title .month i {
-  width: 9px;
-  height: 6px;
-  background-image: url("../images/arrow.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  display: inline-block;
-  left: 120px;
-  top: 10px;
-}
-/* line 115, ../sass/options.scss */
-#title .month select {
-  width: 132px;
-  height: 24px;
-  margin-left: 10px;
-  border: 1px solid #aeaeae;
-  border-radius: 4px;
-  box-shadow: 0 0 5px #c4c4c4 inset;
-  padding: 3px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: linear-gradient(#fefefe, #e6e6e6);
-  outline: none;
-}
-/* line 129, ../sass/options.scss */
 #title .check {
   background-image: url("../images/check.png");
   background-repeat: no-repeat;
@@ -146,6 +116,37 @@ html, body {
   position: absolute;
   left: 5px;
   top: 5px;
+}
+
+/* line 114, ../sass/options.scss */
+.listChoice {
+  position: relative;
+  display: inline-block;
+}
+/* line 118, ../sass/options.scss */
+.listChoice i {
+  width: 9px;
+  height: 6px;
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: inline-block;
+  left: 120px;
+  top: 10px;
+}
+/* line 128, ../sass/options.scss */
+.listChoice select {
+  width: 132px;
+  height: 24px;
+  margin-left: 7px;
+  border: 1px solid #aeaeae;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #c4c4c4 inset;
+  padding: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: linear-gradient(#fefefe, #e6e6e6);
+  outline: none;
 }
 
 /* line 142, ../sass/options.scss */
@@ -159,18 +160,78 @@ html, body {
   box-shadow: 0 -5px 10px #dbdbdb;
 }
 
-/* line 56, load/*.png */
-.load-sprite, .load-down, .load-up {
-  background-image: url('/images/load-s4bffd48128.png');
+/* line 155, ../sass/options.scss */
+#filter {
+  font-size: 93%;
+  margin-top: 17px;
+}
+/* line 159, ../sass/options.scss */
+#filter div {
+  position: relative;
+}
+/* line 163, ../sass/options.scss */
+#filter .title {
+  width: auto;
+  color: #acacac;
+  background-color: #efefef;
+  display: inline-block;
+  padding-right: 5px;
+  font-size: 90%;
+}
+/* line 172, ../sass/options.scss */
+#filter .hrline {
+  width: 100%;
+  height: 1px;
+  background-color: #dbdbdb;
+  top: 10px;
+}
+/* line 178, ../sass/options.scss */
+#filter .row {
+  margin-top: 10px;
+}
+/* line 181, ../sass/options.scss */
+#filter .row .search {
+  width: 250px;
+  height: 24px;
+  border: 1px solid #aeaeae;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  padding: 3px;
+  display: inline-block;
+  box-shadow: inset 0 0 5px #c4c4c4;
+  color: #868686;
+  padding-left: 24px;
+}
+/* line 192, ../sass/options.scss */
+#filter .row .search i {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/search.png");
   background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  left: 5px;
 }
-
-/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.load-down {
-  background-position: 0 0;
+/* line 201, ../sass/options.scss */
+#filter .row .search input {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  outline: none;
 }
-
-/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.load-up {
-  background-position: 0 -15px;
+/* line 210, ../sass/options.scss */
+#filter .row .regions select, #filter .row .ASM select {
+  width: 153px;
+}
+/* line 211, ../sass/options.scss */
+#filter .row .regions i, #filter .row .ASM i {
+  left: 141px;
+}
+/* line 214, ../sass/options.scss */
+#filter .row .distr select, #filter .row .state select {
+  width: 163px;
+}
+/* line 215, ../sass/options.scss */
+#filter .row .distr i, #filter .row .state i {
+  left: 151px;
 }

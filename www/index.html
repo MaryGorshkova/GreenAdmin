@@ -50,7 +50,7 @@
 						<span class="button"><i class="dnl"></i>Загрузить из Excel</span>
 					</div>
 					<div id="title"><h3>Бюджет</h3>
-						<div class="month">
+						<div class="listChoice">
 							<i></i>
 							<select>
 							<option value="jan">Январь 2015</option>
@@ -70,13 +70,41 @@
 						<span class="button"><i class="check"></i>Закрыть версию</span>
 					</div>
 					<section id="filter">
-						<div>Фильтровать результаты</div>
+						<div><div class="hrline"></div><div class="title">Фильтровать результаты:</div></div>
 						<div class="row">
-							<span class="search">Быстрый поиск</span>
-							<span class="regions">Все регионы</span>
-							<span class="distr">Все дистрибьюторы</span>
-							<span class="ASM">Все ASM</span>
-							<span class="state">Все статьи</span>
+							<span class="search"><i></i><input type="text" placeholder="Быстрый поиск"></span>
+							<span class="listChoice regions">
+								<i></i>
+								<select>
+									<option value="">Все регионы</option>
+									<option value="">Регион 1</option>
+									<option value="">Регион 2</option>
+								</select>
+							</span>
+							<span class="listChoice distr">
+								<i></i>
+								<select>
+									<option value="">Все дистрибьюторы</option>
+									<option value="">Дистрибьютор 1</option>
+									<option value="">Дистрибьютор 2</option>
+								</select>
+							</span>							
+							<span class="listChoice ASM">
+								<i></i>
+								<select>
+									<option value="">Все ASM</option>
+									<option value="">ASM 1</option>
+									<option value="">ASM 2</option>
+								</select>
+							</span>
+							<span class="listChoice state">
+								<i></i>
+								<select>
+									<option value="">Все статьи</option>
+									<option value="">Статья 1</option>
+									<option value="">Статья 2</option>
+								</select>
+							</span>
 						</div>			
 						<div class="checks"><span>Отображать ОПХ</span><span>Отображать ФРП</span></div>
 						<div class="paging"></div>
