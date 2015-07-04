@@ -1,0 +1,81 @@
+
+#side_items{
+	display: table-cell;
+	width: 82px;
+	height: 100%;
+	background-color: #e3e3e3;
+	padding-top: 51+14px;
+	padding-left: 10px; padding-right: 10px; 
+
+	.s_item{
+		width: 60px; height: 60px;
+		margin-bottom: 5px;
+		font-size: 92%;
+		text-align: center;
+		border-radius: 5px;
+		cursor: pointer;
+
+		.rect{
+			width: 21px; height: 21px;
+			border: 1px solid;
+			margin-top: 14px; margin-bottom: 1px;
+			display: inline-block;
+			border-radius: 3px;
+
+			i{
+				width: 19px; height: 19px;
+		  		background-image: url('../images/items.png');
+		  		background-repeat: no-repeat;
+		  		display: inline-block;
+			}
+
+		}
+	}
+
+	.common{
+		color: #205527;
+		border: 1px solid #79997d;
+
+		.rect{
+			border-color: #205527;
+
+			i{
+				background-position: 0 0;
+			}
+		}
+	}
+	
+	.selected{
+		color: #f5f5f5;
+		background-color: #205527;
+
+		.rect{
+			border-color: #f5f5f5;
+
+			i{
+				background-position: 0 -19px;
+			}
+		}
+	}
+
+	.line{
+		width: 100%;
+		height: 1px;
+		background-color: #bdbdbd;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+}
+
+// @import "compass/utilities/sprites";
+// @import "items/*.png";
+// @include all-items-sprites;
+
+.items-greenitem {
+  background-position: 0 0;
+}
+
+.items-whiteitem {
+  background-position: 0 -19px;
+}
