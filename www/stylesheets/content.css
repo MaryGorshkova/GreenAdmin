@@ -15,14 +15,16 @@
   color: #8b8b8b;
   font-weight: bold;
   font-size: 110%;
+  cursor: pointer;
 }
-/* line 18, ../sass/content.scss */
+/* line 19, ../sass/content.scss */
 #pages span {
   margin: 0 2px;
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
-/* line 24, ../sass/content.scss */
+/* line 26, ../sass/content.scss */
 #pages .selected {
   background-color: #205527;
   border-radius: 5px;
@@ -30,15 +32,15 @@
   margin: 0;
   padding: 0 2px;
 }
-/* line 31, ../sass/content.scss */
+/* line 33, ../sass/content.scss */
 #pages .selected .line {
   display: none;
 }
-/* line 34, ../sass/content.scss */
+/* line 36, ../sass/content.scss */
 #pages .space {
   padding-left: 4px;
 }
-/* line 36, ../sass/content.scss */
+/* line 38, ../sass/content.scss */
 #pages .line {
   height: 1px;
   width: 100%;

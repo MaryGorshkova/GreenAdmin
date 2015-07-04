@@ -13,12 +13,14 @@
 		color: #8b8b8b;
 		font-weight: bold;
 		font-size: 110%;
+		cursor: pointer;
 	}
 
 	span{
 		margin: 0 2px;
 		position: relative;
-		display: inline-block; 
+		display: inline-block;
+		cursor: pointer; 
 	}
 
 	.selected{
