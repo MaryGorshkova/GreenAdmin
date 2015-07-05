@@ -109,9 +109,10 @@
 html, body {
   height: 100%;
   min-width: 1150px;
+  overflow-y: hidden;
 }
 
-/* line 7, ../sass/options.scss */
+/* line 8, ../sass/options.scss */
 .form {
   display: table;
   height: 100%;
@@ -120,12 +121,12 @@ html, body {
   z-index: 2;
 }
 
-/* line 15, ../sass/options.scss */
+/* line 16, ../sass/options.scss */
 .inner {
   display: table-row;
 }
 
-/* line 19, ../sass/options.scss */
+/* line 20, ../sass/options.scss */
 #main_form {
   display: table-cell;
   height: 100%;
@@ -134,29 +135,29 @@ html, body {
   padding-top: 7px;
 }
 
-/* line 28, ../sass/options.scss */
+/* line 29, ../sass/options.scss */
 #options #navigation, #options #excel_options, #options #title, #options #filter {
   position: relative;
   z-index: 2;
   padding: 0 18px;
 }
-/* line 34, ../sass/options.scss */
+/* line 35, ../sass/options.scss */
 #options span {
   cursor: default;
 }
 
-/* line 39, ../sass/options.scss */
+/* line 40, ../sass/options.scss */
 #navigation {
   color: #2a6ebb;
 }
-/* line 42, ../sass/options.scss */
+/* line 43, ../sass/options.scss */
 #navigation span {
   padding: 0;
   display: inline-block;
   position: relative;
   font-size: 90%;
 }
-/* line 49, ../sass/options.scss */
+/* line 50, ../sass/options.scss */
 #navigation .line {
   height: 1px;
   width: 100%;
@@ -168,12 +169,12 @@ html, body {
   top: 15px;
   right: 0px;
 }
-/* line 60, ../sass/options.scss */
+/* line 61, ../sass/options.scss */
 #navigation .current {
   color: #727272;
 }
 
-/* line 65, ../sass/options.scss */
+/* line 66, ../sass/options.scss */
 .button {
   border: 1px solid #79997d;
   border-radius: 4px;
@@ -185,12 +186,12 @@ html, body {
   color: #205527;
 }
 
-/* line 77, ../sass/options.scss */
+/* line 78, ../sass/options.scss */
 #excel_options {
   margin-top: 7px;
   float: right;
 }
-/* line 81, ../sass/options.scss */
+/* line 82, ../sass/options.scss */
 #excel_options i {
   background-image: url("../images/load.png");
   background-repeat: no-repeat;
@@ -200,25 +201,25 @@ html, body {
   position: absolute;
   left: 3px;
 }
-/* line 91, ../sass/options.scss */
+/* line 92, ../sass/options.scss */
 #excel_options .upl {
   background-position: 0 0;
 }
-/* line 95, ../sass/options.scss */
+/* line 96, ../sass/options.scss */
 #excel_options .dnl {
   background-position: 0 -15px;
 }
 
-/* line 100, ../sass/options.scss */
+/* line 101, ../sass/options.scss */
 #title {
   margin-top: 7px;
 }
-/* line 103, ../sass/options.scss */
+/* line 104, ../sass/options.scss */
 #title h3 {
   font-size: 19px;
   display: inline-block;
 }
-/* line 108, ../sass/options.scss */
+/* line 109, ../sass/options.scss */
 #title .check {
   background-image: url("../images/check.png");
   background-repeat: no-repeat;
@@ -230,12 +231,12 @@ html, body {
   top: 5px;
 }
 
-/* line 121, ../sass/options.scss */
+/* line 122, ../sass/options.scss */
 .listChoice {
   position: relative;
   display: inline-block;
 }
-/* line 125, ../sass/options.scss */
+/* line 126, ../sass/options.scss */
 .listChoice i {
   width: 9px;
   height: 6px;
@@ -246,7 +247,7 @@ html, body {
   left: 120px;
   top: 10px;
 }
-/* line 135, ../sass/options.scss */
+/* line 136, ../sass/options.scss */
 .listChoice select {
   width: 132px;
   height: 24px;
@@ -261,7 +262,7 @@ html, body {
   outline: none;
 }
 
-/* line 149, ../sass/options.scss */
+/* line 150, ../sass/options.scss */
 #footer {
   bottom: 0;
   height: 50px;
@@ -274,17 +275,17 @@ html, body {
   font-size: 95%;
   padding-top: 17px;
 }
-/* line 161, ../sass/options.scss */
+/* line 162, ../sass/options.scss */
 #footer span {
   color: #8b8b8b;
   margin-left: 7px;
 }
-/* line 166, ../sass/options.scss */
+/* line 167, ../sass/options.scss */
 #footer .stat {
   float: right;
   margin-right: 23px;
 }
-/* line 171, ../sass/options.scss */
+/* line 172, ../sass/options.scss */
 #footer .save {
   background-color: #8faa93;
   border-radius: 4px;
@@ -292,7 +293,7 @@ html, body {
   color: #ffffff;
   margin-left: 0;
 }
-/* line 178, ../sass/options.scss */
+/* line 179, ../sass/options.scss */
 #footer .save i {
   background-image: url("../images/save.png");
   background-repeat: no-repeat;
@@ -303,16 +304,16 @@ html, body {
   margin-right: 5px;
 }
 
-/* line 193, ../sass/options.scss */
+/* line 194, ../sass/options.scss */
 #filter {
   font-size: 93%;
   margin-top: 17px;
 }
-/* line 197, ../sass/options.scss */
+/* line 198, ../sass/options.scss */
 #filter div {
   position: relative;
 }
-/* line 201, ../sass/options.scss */
+/* line 202, ../sass/options.scss */
 #filter .title {
   width: auto;
   color: #acacac;
@@ -321,18 +322,18 @@ html, body {
   padding-right: 5px;
   font-size: 90%;
 }
-/* line 210, ../sass/options.scss */
+/* line 211, ../sass/options.scss */
 #filter .hrline {
   width: 100%;
   height: 1px;
   background-color: #dbdbdb;
   top: 10px;
 }
-/* line 216, ../sass/options.scss */
+/* line 217, ../sass/options.scss */
 #filter .row {
   margin-top: 10px;
 }
-/* line 219, ../sass/options.scss */
+/* line 220, ../sass/options.scss */
 #filter .row .search {
   width: 250px;
   height: 24px;
@@ -345,7 +346,7 @@ html, body {
   color: #868686;
   padding-left: 24px;
 }
-/* line 230, ../sass/options.scss */
+/* line 231, ../sass/options.scss */
 #filter .row .search i {
   width: 16px;
   height: 16px;
@@ -355,40 +356,40 @@ html, body {
   position: absolute;
   left: 5px;
 }
-/* line 239, ../sass/options.scss */
+/* line 240, ../sass/options.scss */
 #filter .row .search input {
   width: 100%;
   height: 100%;
   background-color: #f4f4f4;
   outline: none;
 }
-/* line 248, ../sass/options.scss */
+/* line 249, ../sass/options.scss */
 #filter .row .regions select, #filter .row .ASM select {
   width: 153px;
 }
-/* line 249, ../sass/options.scss */
+/* line 250, ../sass/options.scss */
 #filter .row .regions i, #filter .row .ASM i {
   left: 141px;
 }
-/* line 252, ../sass/options.scss */
+/* line 253, ../sass/options.scss */
 #filter .row .distr select, #filter .row .state select {
   width: 163px;
 }
-/* line 253, ../sass/options.scss */
+/* line 254, ../sass/options.scss */
 #filter .row .distr i, #filter .row .state i {
   left: 151px;
 }
-/* line 257, ../sass/options.scss */
+/* line 258, ../sass/options.scss */
 #filter .checks {
   margin-top: 12px;
 }
-/* line 260, ../sass/options.scss */
+/* line 261, ../sass/options.scss */
 #filter .checks span {
   position: relative;
   padding-left: 25px;
   margin-right: 13px;
 }
-/* line 265, ../sass/options.scss */
+/* line 266, ../sass/options.scss */
 #filter .checks span div {
   width: 20px;
   height: 20px;
@@ -399,7 +400,7 @@ html, body {
   left: 0px;
   top: -3px;
 }
-/* line 274, ../sass/options.scss */
+/* line 275, ../sass/options.scss */
 #filter .checks span div i {
   width: 13px;
   height: 10px;
@@ -579,8 +580,12 @@ html, body {
 .data tr {
   height: 50px;
 }
+/* line 79, ../sass/content.scss */
+.data .empty_row {
+  height: 30px;
+}
 
-/* line 81, ../sass/content.scss */
+/* line 84, ../sass/content.scss */
 table {
   width: 100%;
   height: 100%;
@@ -590,11 +595,11 @@ table {
   text-align: left;
   border-collapse: collapse;
 }
-/* line 89, ../sass/content.scss */
+/* line 92, ../sass/content.scss */
 table td {
   vertical-align: middle;
 }
-/* line 92, ../sass/content.scss */
+/* line 95, ../sass/content.scss */
 table td input {
   width: 70px;
   height: 24px;
@@ -607,217 +612,249 @@ table td input {
   padding-right: 5px;
   box-shadow: inset 0px 3px 10px -8px #000000;
 }
-/* line 105, ../sass/content.scss */
+/* line 108, ../sass/content.scss */
 table .sort {
   font-weight: bold;
   color: #000000;
 }
-/* line 110, ../sass/content.scss */
+/* line 113, ../sass/content.scss */
+table .sortable {
+  cursor: pointer;
+}
+/* line 116, ../sass/content.scss */
+table .sortable span {
+  position: relative;
+  cursor: pointer;
+}
+/* line 121, ../sass/content.scss */
+table .sortable span:hover {
+  color: #737373;
+  cursor: pointer;
+}
+/* line 125, ../sass/content.scss */
+table .sortable span:hover .line {
+  border-top: 1px dashed #737373;
+}
+/* line 130, ../sass/content.scss */
+table .sortable .line {
+  height: 1px;
+  width: 100%;
+  padding: 0;
+  vertical-align: 100%;
+  position: absolute;
+  top: 13px;
+  right: 0px;
+  text-align: center;
+  display: inline-block;
+  border-top: 1px dashed #ffffff;
+  cursor: pointer;
+}
+/* line 146, ../sass/content.scss */
 table .amount {
   background-color: #008200;
   height: 24px;
 }
-/* line 114, ../sass/content.scss */
+/* line 150, ../sass/content.scss */
 table .amount .cell05, table .amount .cell07 {
   border-right: 1px solid #008200;
 }
-/* line 118, ../sass/content.scss */
+/* line 154, ../sass/content.scss */
 table .amount .cell04 {
   border-left: 1px solid #006700;
 }
-/* line 122, ../sass/content.scss */
+/* line 158, ../sass/content.scss */
 table .amount .cell09 {
   border-right: 1px solid #006700;
 }
-/* line 126, ../sass/content.scss */
+/* line 162, ../sass/content.scss */
 table .amount .cell01, table .amount .cell12 {
   color: #f8f8f8;
   font-weight: bold;
 }
-/* line 131, ../sass/content.scss */
+/* line 167, ../sass/content.scss */
 table .amount .cell11, table .amount .cell12 {
   border: none;
 }
-/* line 135, ../sass/content.scss */
+/* line 171, ../sass/content.scss */
 table .amount .cell05, table .amount .cell06, table .amount .cell07, table .amount .cell08, table .amount .cell10, table .amount .cell11 {
   color: #dddddd;
   padding-right: 7px;
 }
-/* line 140, ../sass/content.scss */
+/* line 176, ../sass/content.scss */
 table .amount td {
   background-color: inherit;
 }
 
-/* line 146, ../sass/content.scss */
+/* line 182, ../sass/content.scss */
 .row1 {
   height: 48px;
   color: #a3a3a3;
   font-weight: bold;
 }
-/* line 151, ../sass/content.scss */
+/* line 187, ../sass/content.scss */
 .row1 .big {
   padding: 0;
   width: 162px;
   border-spacing: 0px;
   border-left: 1px solid #cdcdcd;
 }
-/* line 157, ../sass/content.scss */
+/* line 193, ../sass/content.scss */
 .row1 .big td {
   padding-right: 4px;
 }
-/* line 161, ../sass/content.scss */
+/* line 197, ../sass/content.scss */
 .row1 .big .cell10 {
   border: none;
 }
-/* line 164, ../sass/content.scss */
+/* line 200, ../sass/content.scss */
 .row1 .big1 {
   width: 165;
   background-color: #f7f7f7;
 }
-/* line 168, ../sass/content.scss */
+/* line 204, ../sass/content.scss */
 .row1 .big1 td {
   padding-right: 4px;
 }
-/* line 173, ../sass/content.scss */
+/* line 209, ../sass/content.scss */
 .row1 table {
   color: inherit;
   background-color: inherit;
 }
-/* line 177, ../sass/content.scss */
+/* line 213, ../sass/content.scss */
 .row1 table td {
   text-align: right;
   font-size: 103%;
   font-weight: bold;
 }
-/* line 183, ../sass/content.scss */
+/* line 219, ../sass/content.scss */
 .row1 table .cell05, .row1 table .cell06, .row1 table .cell07, .row1 table .cell08, .row1 table .cell10, .row1 table .cell11 {
   font-size: 90%;
 }
-/* line 189, ../sass/content.scss */
+/* line 225, ../sass/content.scss */
 .row1 .cell12 {
   width: 126px;
   text-align: center;
 }
-/* line 194, ../sass/content.scss */
+/* line 230, ../sass/content.scss */
 .row1 .cell05, .row1 .cell07 {
   border-right: 1px solid #efefef;
 }
-/* line 198, ../sass/content.scss */
+/* line 234, ../sass/content.scss */
 .row1 .cell05, .row1 .cell06, .row1 .cell07, .row1 .cell08 {
   width: 82px;
   background-color: #f7f7f7;
 }
 
-/* line 204, ../sass/content.scss */
+/* line 240, ../sass/content.scss */
 .cell01 {
   width: 144px;
 }
 
-/* line 208, ../sass/content.scss */
+/* line 244, ../sass/content.scss */
 .cell02 {
   width: 155px;
 }
 
-/* line 212, ../sass/content.scss */
+/* line 248, ../sass/content.scss */
 .cell03 {
   width: 85px;
 }
 
-/* line 216, ../sass/content.scss */
+/* line 252, ../sass/content.scss */
 .cell04, .cell09 {
   width: 30px;
   background-color: #f7f7f7;
 }
 
-/* line 221, ../sass/content.scss */
+/* line 257, ../sass/content.scss */
 .cell04 {
   box-shadow: inset 4px 0 20px -15px #000000;
   -moz-box-shadow: inset 4px 0 20px -15px #000000;
   border-left: 1px solid #cdcdcd;
 }
 
-/* line 227, ../sass/content.scss */
+/* line 263, ../sass/content.scss */
 .cell09 {
   box-shadow: inset -4px 0 20px -15px #000000;
   -webkit-box-shadow: inset -4px 0 20px -15px #000000;
 }
 
-/* line 232, ../sass/content.scss */
+/* line 268, ../sass/content.scss */
 .cell10 {
   border-left: 1px solid #cbcbcb;
 }
 
-/* line 236, ../sass/content.scss */
+/* line 272, ../sass/content.scss */
 .cell05, .cell06, .cell07, .cell08 {
   width: 82px;
   background-color: #efefef;
   text-align: right;
 }
 
-/* line 242, ../sass/content.scss */
+/* line 278, ../sass/content.scss */
 .cell05, .cell07 {
   border-right: 1px solid #dfdfdf;
 }
 
-/* line 246, ../sass/content.scss */
+/* line 282, ../sass/content.scss */
 .merged {
   width: 162px;
 }
 
-/* line 250, ../sass/content.scss */
+/* line 286, ../sass/content.scss */
 .marg_cell {
   width: 5px;
   background-color: #f7f7f7;
 }
 
-/* line 255, ../sass/content.scss */
+/* line 291, ../sass/content.scss */
 .cell10, .cell11 {
   width: 81px;
 }
 
-/* line 259, ../sass/content.scss */
+/* line 295, ../sass/content.scss */
 .cell11, .cell12 {
   border-left: 1px solid #efefef;
 }
 
-/* line 263, ../sass/content.scss */
+/* line 299, ../sass/content.scss */
 .cell12 {
   width: 111px;
 }
 
-/* line 267, ../sass/content.scss */
+/* line 303, ../sass/content.scss */
 .cell10, .cell11, .cell12 {
   text-align: right;
   padding-right: 7px;
 }
 
-/* line 272, ../sass/content.scss */
+/* line 308, ../sass/content.scss */
 .cell01, .cell02, .cell03 {
   padding-left: 19px;
 }
 
-/* line 279, ../sass/content.scss */
+/* line 315, ../sass/content.scss */
 .activated {
   background-color: #e4e4e4;
 }
 
-/* line 283, ../sass/content.scss */
+/* line 319, ../sass/content.scss */
 .activated_left {
   background-position: 0 -40px;
 }
 
-/* line 287, ../sass/content.scss */
+/* line 323, ../sass/content.scss */
 .activated_right {
   background-position: 0 -60px;
 }
 
-/* line 291, ../sass/content.scss */
+/* line 327, ../sass/content.scss */
 .action_left, .action_right {
   width: 25px;
   height: 100%;
   position: relative;
 }
-/* line 296, ../sass/content.scss */
+/* line 332, ../sass/content.scss */
 .action_left i, .action_right i {
   background-image: url("../images/nav.png");
   background-repeat: no-repeat;
@@ -831,49 +868,49 @@ table .amount td {
   left: 7px;
 }
 
-/* line 309, ../sass/content.scss */
+/* line 345, ../sass/content.scss */
 .action_left {
   box-shadow: inset 4px 0 20px -15px #000000;
 }
-/* line 311, ../sass/content.scss */
+/* line 347, ../sass/content.scss */
 .action_left i {
   background-position: 0 0;
 }
 
-/* line 315, ../sass/content.scss */
+/* line 351, ../sass/content.scss */
 .amount .activated .action_left, .amount .activated .action_right {
   background-color: #007900;
 }
 
-/* line 320, ../sass/content.scss */
+/* line 356, ../sass/content.scss */
 .action_right {
   box-shadow: inset -4px 0 20px -15px #000000;
   margin-left: 5px;
 }
-/* line 323, ../sass/content.scss */
+/* line 359, ../sass/content.scss */
 .action_right i {
   background-position: 0 -20px;
 }
 
-/* line 330, ../sass/content.scss */
+/* line 366, ../sass/content.scss */
 #parent01 {
   width: 414px;
   float: left;
 }
 
-/* line 335, ../sass/content.scss */
+/* line 371, ../sass/content.scss */
 #parent02 {
   width: 165px;
   float: left;
 }
 
-/* line 340, ../sass/content.scss */
+/* line 376, ../sass/content.scss */
 #parent03 {
   width: 170px;
   float: left;
 }
 
-/* line 345, ../sass/content.scss */
+/* line 381, ../sass/content.scss */
 #parent04 {
   width: 304px;
   float: left;
