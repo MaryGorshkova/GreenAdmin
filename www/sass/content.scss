@@ -8,6 +8,7 @@
 
 #pages{
 	margin-top: 3px;
+	width: 1068px;
 	
 	em{
 		color: #8b8b8b;
@@ -54,6 +55,7 @@
 	margin-top: 8px;
 	margin-bottom: 50px;
 	height: 100%;
+	width: 1068px;
 }
 
 .caption{
@@ -68,6 +70,10 @@
 	overflow-y: scroll;
 	position: relative;
 	z-index: 0;
+	font-size: 13px;
+	tr{
+		height: 50px;
+	}
 }
 
 table{
@@ -115,12 +121,27 @@ table{
 	color: #a3a3a3;
 	font-weight: bold;
 
+	table{
+		color: inherit;
+		background-color: inherit;
+
+		td{
+			text-align: right;
+			font-size: 103%;
+			font-weight: bold;
+		}
+
+		.cell05, .cell06, .cell07, .cell08, .cell10, .cell11{
+			font-size: 90%;
+		}
+	}
+
 	.cell12{
 		width: 126px;
 		text-align: center;
 	}
 
-	.cell05, .cell06, .cell07, .cell08{
+	.cell05, .cell07{
 		border-right: 1px solid #efefef;
 	}
 
@@ -139,7 +160,7 @@ table{
 }
 
 .cell03{
-	width: 150px;
+	width: 85px;
 }
 
 .cell04, .cell09{
@@ -149,6 +170,11 @@ table{
 .cell05, .cell06, .cell07, .cell08{
 	width: 82px;
 	background-color: #efefef;
+	text-align: right;
+}
+
+.merged{
+	width: 165px;
 }
 
 .marg_cell{
@@ -178,7 +204,7 @@ table{
 
 .cell10, .cell11, .cell12{
 	text-align: right;
-	padding: 3px;
+	padding: 4px;
 }
 
 .cell01, .cell02, .cell03{
