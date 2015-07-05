@@ -53,3 +53,19 @@
   text-align: center;
   display: inline-block;
 }
+
+/* line 53, ../sass/content.scss */
+#content {
+  overflow-y: scroll;
+}
+
+/* line 57, ../sass/content.scss */
+table {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 61, ../sass/content.scss */
+#cell03 {
+  width: 150px;
+}
