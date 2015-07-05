@@ -50,14 +50,56 @@
 
 }
 
-#content{
-	overflow-y: scroll;
-}
-
 table{
 	width: 100%; height: 100%;
+	background-color: #ffffff;
+	font-size: 95%;
+	color: #000000;
+	text-align: left;
+	border-collapse: collapse;
+
+	.sort{
+		font-weight: bold;
+	}
+
+	.amount{
+		background-color: #008200;
+
+		.cell01, .cell12{
+			color: #f8f8f8;
+			font-weight: bold;
+		}
+	}
 }
 
-#cell03{
+.cell01{
+	width: 144px;
+}
+
+.cell02{
+	width: 155px;
+}
+
+.cell03{
 	width: 150px;
+}
+
+.cell04, .cell09{
+	width: 15px;
+}
+
+.cell05, .cell06, .cell07, .cell08{
+	width: 82px;
+}
+
+.cell10, .cell11{
+	width: 81px;
+}
+
+.cell12{
+	width: 111px;
+}
+
+.cell10, .cell11, .cell12{
+	text-align: right;
 }
