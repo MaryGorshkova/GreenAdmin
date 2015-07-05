@@ -10,22 +10,24 @@
   background-color: #205527;
   border-bottom: 1px solid #ffffff;
   box-shadow: 0 5px 10px #dbdbdb;
+  position: relative;
+  z-index: 3;
 }
-/* line 33, ../sass/header.scss */
+/* line 35, ../sass/header.scss */
 #header span {
   cursor: default;
 }
-/* line 35, ../sass/header.scss */
+/* line 37, ../sass/header.scss */
 #header #user {
   float: right;
   margin-top: 13px;
   margin-right: 20px;
 }
-/* line 40, ../sass/header.scss */
+/* line 42, ../sass/header.scss */
 #header #user img {
   vertical-align: middle;
 }
-/* line 44, ../sass/header.scss */
+/* line 46, ../sass/header.scss */
 #header #user .login {
   width: 53px;
   height: 24px;
@@ -54,7 +56,7 @@
   top: 15px;
   right: 0px;
 }
-/* line 57, ../sass/header.scss */
+/* line 59, ../sass/header.scss */
 #header .logo {
   padding: 9px 18px 14px 17px;
   height: 100%;
@@ -63,13 +65,13 @@
   border-right: 1px solid #008f00;
   background-color: #008200;
 }
-/* line 66, ../sass/header.scss */
+/* line 68, ../sass/header.scss */
 #header .menu_items {
   display: inline-block;
   vertical-align: top;
   margin-top: 14px;
 }
-/* line 71, ../sass/header.scss */
+/* line 73, ../sass/header.scss */
 #header .menu_items span {
   padding: 3px 10px 4px 10px;
   font-size: 11px;
@@ -97,7 +99,7 @@
   top: 15px;
   right: 0px;
 }
-/* line 82, ../sass/header.scss */
+/* line 84, ../sass/header.scss */
 #header .menu_items .selected {
   border-radius: 5px;
   background-color: #163b1b;
@@ -114,14 +116,16 @@ html, body {
   display: table;
   height: 100%;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
-/* line 13, ../sass/options.scss */
+/* line 15, ../sass/options.scss */
 .inner {
   display: table-row;
 }
 
-/* line 17, ../sass/options.scss */
+/* line 19, ../sass/options.scss */
 #main_form {
   display: table-cell;
   height: 100%;
@@ -130,27 +134,29 @@ html, body {
   padding-top: 7px;
 }
 
-/* line 26, ../sass/options.scss */
+/* line 28, ../sass/options.scss */
 #options #navigation, #options #excel_options, #options #title, #options #filter {
+  position: relative;
+  z-index: 2;
   padding: 0 18px;
 }
-/* line 30, ../sass/options.scss */
+/* line 34, ../sass/options.scss */
 #options span {
   cursor: default;
 }
 
-/* line 35, ../sass/options.scss */
+/* line 39, ../sass/options.scss */
 #navigation {
   color: #2a6ebb;
 }
-/* line 38, ../sass/options.scss */
+/* line 42, ../sass/options.scss */
 #navigation span {
   padding: 0;
   display: inline-block;
   position: relative;
   font-size: 90%;
 }
-/* line 45, ../sass/options.scss */
+/* line 49, ../sass/options.scss */
 #navigation .line {
   height: 1px;
   width: 100%;
@@ -162,12 +168,12 @@ html, body {
   top: 15px;
   right: 0px;
 }
-/* line 56, ../sass/options.scss */
+/* line 60, ../sass/options.scss */
 #navigation .current {
   color: #727272;
 }
 
-/* line 61, ../sass/options.scss */
+/* line 65, ../sass/options.scss */
 .button {
   border: 1px solid #79997d;
   border-radius: 4px;
@@ -179,12 +185,12 @@ html, body {
   color: #205527;
 }
 
-/* line 73, ../sass/options.scss */
+/* line 77, ../sass/options.scss */
 #excel_options {
   margin-top: 7px;
   float: right;
 }
-/* line 77, ../sass/options.scss */
+/* line 81, ../sass/options.scss */
 #excel_options i {
   background-image: url("../images/load.png");
   background-repeat: no-repeat;
@@ -194,25 +200,25 @@ html, body {
   position: absolute;
   left: 3px;
 }
-/* line 87, ../sass/options.scss */
+/* line 91, ../sass/options.scss */
 #excel_options .upl {
   background-position: 0 0;
 }
-/* line 91, ../sass/options.scss */
+/* line 95, ../sass/options.scss */
 #excel_options .dnl {
   background-position: 0 -15px;
 }
 
-/* line 96, ../sass/options.scss */
+/* line 100, ../sass/options.scss */
 #title {
   margin-top: 7px;
 }
-/* line 99, ../sass/options.scss */
+/* line 103, ../sass/options.scss */
 #title h3 {
   font-size: 19px;
   display: inline-block;
 }
-/* line 104, ../sass/options.scss */
+/* line 108, ../sass/options.scss */
 #title .check {
   background-image: url("../images/check.png");
   background-repeat: no-repeat;
@@ -224,12 +230,12 @@ html, body {
   top: 5px;
 }
 
-/* line 117, ../sass/options.scss */
+/* line 121, ../sass/options.scss */
 .listChoice {
   position: relative;
   display: inline-block;
 }
-/* line 121, ../sass/options.scss */
+/* line 125, ../sass/options.scss */
 .listChoice i {
   width: 9px;
   height: 6px;
@@ -240,7 +246,7 @@ html, body {
   left: 120px;
   top: 10px;
 }
-/* line 131, ../sass/options.scss */
+/* line 135, ../sass/options.scss */
 .listChoice select {
   width: 132px;
   height: 24px;
@@ -255,7 +261,7 @@ html, body {
   outline: none;
 }
 
-/* line 145, ../sass/options.scss */
+/* line 149, ../sass/options.scss */
 #footer {
   position: fixed;
   left: 82px;
@@ -266,16 +272,16 @@ html, body {
   box-shadow: 0 -5px 10px #dbdbdb;
 }
 
-/* line 158, ../sass/options.scss */
+/* line 162, ../sass/options.scss */
 #filter {
   font-size: 93%;
   margin-top: 17px;
 }
-/* line 162, ../sass/options.scss */
+/* line 166, ../sass/options.scss */
 #filter div {
   position: relative;
 }
-/* line 166, ../sass/options.scss */
+/* line 170, ../sass/options.scss */
 #filter .title {
   width: auto;
   color: #acacac;
@@ -284,18 +290,18 @@ html, body {
   padding-right: 5px;
   font-size: 90%;
 }
-/* line 175, ../sass/options.scss */
+/* line 179, ../sass/options.scss */
 #filter .hrline {
   width: 100%;
   height: 1px;
   background-color: #dbdbdb;
   top: 10px;
 }
-/* line 181, ../sass/options.scss */
+/* line 185, ../sass/options.scss */
 #filter .row {
   margin-top: 10px;
 }
-/* line 184, ../sass/options.scss */
+/* line 188, ../sass/options.scss */
 #filter .row .search {
   width: 250px;
   height: 24px;
@@ -308,7 +314,7 @@ html, body {
   color: #868686;
   padding-left: 24px;
 }
-/* line 195, ../sass/options.scss */
+/* line 199, ../sass/options.scss */
 #filter .row .search i {
   width: 16px;
   height: 16px;
@@ -318,40 +324,40 @@ html, body {
   position: absolute;
   left: 5px;
 }
-/* line 204, ../sass/options.scss */
+/* line 208, ../sass/options.scss */
 #filter .row .search input {
   width: 100%;
   height: 100%;
   background-color: #f4f4f4;
   outline: none;
 }
-/* line 213, ../sass/options.scss */
+/* line 217, ../sass/options.scss */
 #filter .row .regions select, #filter .row .ASM select {
   width: 153px;
 }
-/* line 214, ../sass/options.scss */
+/* line 218, ../sass/options.scss */
 #filter .row .regions i, #filter .row .ASM i {
   left: 141px;
 }
-/* line 217, ../sass/options.scss */
+/* line 221, ../sass/options.scss */
 #filter .row .distr select, #filter .row .state select {
   width: 163px;
 }
-/* line 218, ../sass/options.scss */
+/* line 222, ../sass/options.scss */
 #filter .row .distr i, #filter .row .state i {
   left: 151px;
 }
-/* line 222, ../sass/options.scss */
+/* line 226, ../sass/options.scss */
 #filter .checks {
   margin-top: 12px;
 }
-/* line 225, ../sass/options.scss */
+/* line 229, ../sass/options.scss */
 #filter .checks span {
   position: relative;
   padding-left: 25px;
   margin-right: 13px;
 }
-/* line 230, ../sass/options.scss */
+/* line 234, ../sass/options.scss */
 #filter .checks span div {
   width: 20px;
   height: 20px;
@@ -362,7 +368,7 @@ html, body {
   left: 0px;
   top: -3px;
 }
-/* line 239, ../sass/options.scss */
+/* line 243, ../sass/options.scss */
 #filter .checks span div i {
   width: 13px;
   height: 10px;
@@ -515,17 +521,27 @@ html, body {
 
 /* line 53, ../sass/content.scss */
 #content {
+  margin-top: 8px;
   margin-bottom: 50px;
   height: 100%;
 }
 
-/* line 58, ../sass/content.scss */
+/* line 59, ../sass/content.scss */
+.caption {
+  border-bottom: 1px solid #c5c5c5;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 66, ../sass/content.scss */
 .data {
   height: 250px;
   overflow-y: scroll;
+  position: relative;
+  z-index: 0;
 }
 
-/* line 63, ../sass/content.scss */
+/* line 73, ../sass/content.scss */
 table {
   width: 100%;
   height: 100%;
@@ -535,58 +551,84 @@ table {
   text-align: left;
   border-collapse: collapse;
 }
-/* line 71, ../sass/content.scss */
+/* line 81, ../sass/content.scss */
+table td {
+  vertical-align: middle;
+}
+/* line 85, ../sass/content.scss */
 table .sort {
   font-weight: bold;
+  color: #000000;
 }
-/* line 75, ../sass/content.scss */
+/* line 90, ../sass/content.scss */
 table .amount {
   background-color: #008200;
+  height: 24px;
 }
-/* line 78, ../sass/content.scss */
+/* line 94, ../sass/content.scss */
 table .amount .cell01, table .amount .cell12 {
   color: #f8f8f8;
   font-weight: bold;
 }
+/* line 98, ../sass/content.scss */
+table .amount .cell05, table .amount .cell06, table .amount .cell07, table .amount .cell08, table .amount .cell10, table .amount .cell11 {
+  color: #dddddd;
+}
 
-/* line 85, ../sass/content.scss */
+/* line 104, ../sass/content.scss */
+.row1 {
+  height: 48px;
+  color: #a3a3a3;
+  font-weight: bold;
+}
+/* line 109, ../sass/content.scss */
+.row1 .cell12 {
+  width: 124px;
+}
+
+/* line 114, ../sass/content.scss */
 .cell01 {
   width: 144px;
 }
 
-/* line 89, ../sass/content.scss */
+/* line 118, ../sass/content.scss */
 .cell02 {
   width: 155px;
 }
 
-/* line 93, ../sass/content.scss */
+/* line 122, ../sass/content.scss */
 .cell03 {
   width: 150px;
 }
 
-/* line 97, ../sass/content.scss */
+/* line 126, ../sass/content.scss */
 .cell04, .cell09 {
   width: 15px;
 }
 
-/* line 101, ../sass/content.scss */
+/* line 130, ../sass/content.scss */
 .cell05, .cell06, .cell07, .cell08 {
   width: 82px;
 }
 
-/* line 105, ../sass/content.scss */
+/* line 134, ../sass/content.scss */
 .cell10, .cell11 {
   width: 81px;
 }
 
-/* line 109, ../sass/content.scss */
+/* line 138, ../sass/content.scss */
 .cell12 {
   width: 111px;
 }
 
-/* line 113, ../sass/content.scss */
+/* line 142, ../sass/content.scss */
 .cell10, .cell11, .cell12 {
   text-align: right;
+}
+
+/* line 146, ../sass/content.scss */
+.cell01, .cell02, .cell03 {
+  padding-left: 19px;
 }
 
 /* line 14, ../sass/screen.scss */

@@ -51,13 +51,23 @@
 }
 
 #content{
+	margin-top: 8px;
 	margin-bottom: 50px;
 	height: 100%;
+}
+
+.caption{
+	border-bottom: 1px solid #c5c5c5;
+	// box-shadow: 0 2px 20px #000000;
+	position: relative;
+	z-index: 1;
 }
 
 .data{
 	height: 250px;
 	overflow-y: scroll;
+	position: relative;
+	z-index: 0;
 }
 
 table{
@@ -68,17 +78,36 @@ table{
 	text-align: left;
 	border-collapse: collapse;
 
+	td{
+		vertical-align: middle;
+	}
+
 	.sort{
 		font-weight: bold;
+		color: #000000;
 	}
 
 	.amount{
 		background-color: #008200;
+		height: 24px;
 
 		.cell01, .cell12{
 			color: #f8f8f8;
 			font-weight: bold;
 		}
+		.cell05, .cell06, .cell07, .cell08, .cell10, .cell11{
+			color: #dddddd;
+		}
+	}
+}
+
+.row1{
+	height: 48px;
+	color: #a3a3a3;
+	font-weight: bold;
+
+	.cell12{
+		width: 124px;
 	}
 }
 
@@ -112,4 +141,8 @@ table{
 
 .cell10, .cell11, .cell12{
 	text-align: right;
+}
+
+.cell01, .cell02, .cell03{
+	padding-left: 19px;
 }

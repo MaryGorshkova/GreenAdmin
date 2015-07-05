@@ -8,6 +8,8 @@ html, body{
 	display: table;
 	height: 100%;
 	width: 100%;
+	position: relative;
+	z-index: 2;
 }
 
 .inner{
@@ -24,6 +26,8 @@ html, body{
 
 #options{
 	#navigation, #excel_options, #title, #filter{
+		position: relative;
+		z-index: 2;
 		padding: 0 18px;
 	}
 
@@ -45,7 +49,7 @@ html, body{
 	.line{
 		height: 1px;
 		width: 100%;
-		padding: 0;;
+		padding: 0;
 		display: block;
 		vertical-align: 100%;
 		background-color: #2a6ebb;

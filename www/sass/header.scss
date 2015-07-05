@@ -29,6 +29,8 @@ $green: #205527;
 	background-color: $green;
 	border-bottom: 1px solid #ffffff;
 	box-shadow: 0 5px 10px #dbdbdb;
+	position: relative;
+	z-index: 3;
 
 	span{cursor: default;}
 

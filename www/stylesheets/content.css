@@ -56,17 +56,27 @@
 
 /* line 53, ../sass/content.scss */
 #content {
+  margin-top: 8px;
   margin-bottom: 50px;
   height: 100%;
 }
 
-/* line 58, ../sass/content.scss */
+/* line 59, ../sass/content.scss */
+.caption {
+  border-bottom: 1px solid #c5c5c5;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 66, ../sass/content.scss */
 .data {
   height: 250px;
   overflow-y: scroll;
+  position: relative;
+  z-index: 0;
 }
 
-/* line 63, ../sass/content.scss */
+/* line 73, ../sass/content.scss */
 table {
   width: 100%;
   height: 100%;
@@ -76,56 +86,82 @@ table {
   text-align: left;
   border-collapse: collapse;
 }
-/* line 71, ../sass/content.scss */
+/* line 81, ../sass/content.scss */
+table td {
+  vertical-align: middle;
+}
+/* line 85, ../sass/content.scss */
 table .sort {
   font-weight: bold;
+  color: #000000;
 }
-/* line 75, ../sass/content.scss */
+/* line 90, ../sass/content.scss */
 table .amount {
   background-color: #008200;
+  height: 24px;
 }
-/* line 78, ../sass/content.scss */
+/* line 94, ../sass/content.scss */
 table .amount .cell01, table .amount .cell12 {
   color: #f8f8f8;
   font-weight: bold;
 }
+/* line 98, ../sass/content.scss */
+table .amount .cell05, table .amount .cell06, table .amount .cell07, table .amount .cell08, table .amount .cell10, table .amount .cell11 {
+  color: #dddddd;
+}
 
-/* line 85, ../sass/content.scss */
+/* line 104, ../sass/content.scss */
+.row1 {
+  height: 48px;
+  color: #a3a3a3;
+  font-weight: bold;
+}
+/* line 109, ../sass/content.scss */
+.row1 .cell12 {
+  width: 124px;
+}
+
+/* line 114, ../sass/content.scss */
 .cell01 {
   width: 144px;
 }
 
-/* line 89, ../sass/content.scss */
+/* line 118, ../sass/content.scss */
 .cell02 {
   width: 155px;
 }
 
-/* line 93, ../sass/content.scss */
+/* line 122, ../sass/content.scss */
 .cell03 {
   width: 150px;
 }
 
-/* line 97, ../sass/content.scss */
+/* line 126, ../sass/content.scss */
 .cell04, .cell09 {
   width: 15px;
 }
 
-/* line 101, ../sass/content.scss */
+/* line 130, ../sass/content.scss */
 .cell05, .cell06, .cell07, .cell08 {
   width: 82px;
 }
 
-/* line 105, ../sass/content.scss */
+/* line 134, ../sass/content.scss */
 .cell10, .cell11 {
   width: 81px;
 }
 
-/* line 109, ../sass/content.scss */
+/* line 138, ../sass/content.scss */
 .cell12 {
   width: 111px;
 }
 
-/* line 113, ../sass/content.scss */
+/* line 142, ../sass/content.scss */
 .cell10, .cell11, .cell12 {
   text-align: right;
+}
+
+/* line 146, ../sass/content.scss */
+.cell01, .cell02, .cell03 {
+  padding-left: 19px;
 }
