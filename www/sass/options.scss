@@ -23,7 +23,9 @@ html, body{
 }
 
 #options{
-	padding: 0 18px;
+	#navigation, #excel_options, #title, #filter{
+		padding: 0 18px;
+	}
 
 	span{
 		cursor: default;
