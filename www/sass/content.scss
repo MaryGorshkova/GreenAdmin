@@ -56,11 +56,10 @@
 	margin-bottom: 50px;
 	height: 100%;
 	width: 1068px;
+	box-shadow: 0 -5px 20px -15px #000000;
 }
 
 .caption{
-	border-bottom: 1px solid #c5c5c5;
-	// box-shadow: 0 2px 20px #000000;
 	position: relative;
 	z-index: 1;
 }
@@ -86,6 +85,18 @@ table{
 
 	td{
 		vertical-align: middle;
+
+		input{
+			width: 70px; height: 24px;
+			margin-left: 6px;
+			margin-right: 6px;
+			border: 1px solid #aeaeae;
+			border-radius: 4px;
+			background-color: #f4f4f4;
+			text-align: right;
+			padding-right: 5px;
+			box-shadow: inset 0px 3px 10px -8px #000000;
+		}
 	}
 
 	.sort{
@@ -99,6 +110,14 @@ table{
 
 		.cell05, .cell07{
 			border-right: 1px solid #008200;
+		}
+
+		.cell04{
+			border-left: 1px solid #006700;
+		}
+
+		.cell09{
+			border-right: 1px solid #006700;	
 		}
 
 		.cell01, .cell12{
@@ -126,6 +145,28 @@ table{
 	color: #a3a3a3;
 	font-weight: bold;
 
+	.big{
+		padding: 0;
+		width: 162px;
+		border-spacing: 0px;
+		border-left: 1px solid #cdcdcd;
+
+		td{
+			padding-right: 4px;
+		}
+
+		.cell10{border: none;}
+	}
+
+	.big1{
+		width: 165;
+		background-color: #f7f7f7;
+
+		td{
+			padding-right: 4px;
+		}
+	}
+
 	table{
 		color: inherit;
 		background-color: inherit;
@@ -140,9 +181,6 @@ table{
 			font-size: 90%;
 		}
 
-		.cell10{
-			border-left: none;
-		}
 	}
 
 	.cell12{
@@ -185,7 +223,6 @@ table{
 .cell09{
 	box-shadow: inset -4px 0 20px -15px #000000;
 	-webkit-box-shadow: inset -4px 0 20px -15px #000000;
-	// border-right: 1px solid #cbcbcb;
 }
 
 .cell10{
@@ -203,7 +240,7 @@ table{
 }
 
 .merged{
-	width: 165px;
+	width: 162px;
 }
 
 .marg_cell{
@@ -231,15 +268,4 @@ table{
 
 .cell01, .cell02, .cell03{
 	padding-left: 19px;
-}
-
-input{
-	width: 70px; height: 24px;
-	margin-left: 6px;
-	margin-right: 6px;
-	border: 1px solid #aeaeae;
-	border-radius: 4px;
-	background-color: #f4f4f4;
-	text-align: right;
-	padding-right: 5px;
 }
