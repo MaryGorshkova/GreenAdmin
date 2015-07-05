@@ -95,8 +95,17 @@ table{
 			color: #f8f8f8;
 			font-weight: bold;
 		}
+		
+		.cell11, .cell12{
+			border: none;
+		}
+
 		.cell05, .cell06, .cell07, .cell08, .cell10, .cell11{
 			color: #dddddd;
+		}
+
+		td{
+			background-color: inherit;
 		}
 	}
 }
@@ -107,7 +116,17 @@ table{
 	font-weight: bold;
 
 	.cell12{
-		width: 124px;
+		width: 126px;
+		text-align: center;
+	}
+
+	.cell05, .cell06, .cell07, .cell08{
+		border-right: 1px solid #efefef;
+	}
+
+	.cell05, .cell06, .cell07, .cell08{
+		width: 82px;
+		background-color: #f7f7f7;
 	}
 }
 
@@ -129,10 +148,28 @@ table{
 
 .cell05, .cell06, .cell07, .cell08{
 	width: 82px;
+	background-color: #efefef;
+}
+
+.marg_cell{
+	width: 5px;
+	background-color: #f7f7f7;
+}
+
+.cell04{
+	border-left: 1px solid #cdcdcd;
+} 
+
+.cell09{
+	border-right: 1px solid #cdcdcd;
 }
 
 .cell10, .cell11{
 	width: 81px;
+}
+
+.cell11, .cell12{
+	border-left: 1px solid #efefef;
 }
 
 .cell12{
@@ -141,6 +178,7 @@ table{
 
 .cell10, .cell11, .cell12{
 	text-align: right;
+	padding: 3px;
 }
 
 .cell01, .cell02, .cell03{
