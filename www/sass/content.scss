@@ -79,7 +79,7 @@
 table{
 	width: 100%; height: 100%;
 	background-color: #ffffff;
-	font-size: 95%;
+	font-size: 93%;
 	color: #000000;
 	text-align: left;
 	border-collapse: collapse;
@@ -97,6 +97,10 @@ table{
 		background-color: #008200;
 		height: 24px;
 
+		.cell05, .cell07{
+			border-right: 1px solid #008200;
+		}
+
 		.cell01, .cell12{
 			color: #f8f8f8;
 			font-weight: bold;
@@ -108,6 +112,7 @@ table{
 
 		.cell05, .cell06, .cell07, .cell08, .cell10, .cell11{
 			color: #dddddd;
+			padding-right: 7px;
 		}
 
 		td{
@@ -133,6 +138,10 @@ table{
 
 		.cell05, .cell06, .cell07, .cell08, .cell10, .cell11{
 			font-size: 90%;
+		}
+
+		.cell10{
+			border-left: none;
 		}
 	}
 
@@ -164,13 +173,33 @@ table{
 }
 
 .cell04, .cell09{
-	width: 15px;
+	width: 30px;
+	background-color: #f7f7f7;
+}
+
+.cell04{
+	box-shadow: inset 4px 0 20px -15px #000000;
+	border-left: 1px solid #cdcdcd;
+}
+
+.cell09{
+	box-shadow: inset -4px 0 20px -15px #000000;
+	-webkit-box-shadow: inset -4px 0 20px -15px #000000;
+	// border-right: 1px solid #cbcbcb;
+}
+
+.cell10{
+	border-left: 1px solid #cbcbcb;
 }
 
 .cell05, .cell06, .cell07, .cell08{
 	width: 82px;
 	background-color: #efefef;
 	text-align: right;
+}
+
+.cell05, .cell07{
+	border-right: 1px solid #dfdfdf;
 }
 
 .merged{
@@ -180,14 +209,6 @@ table{
 .marg_cell{
 	width: 5px;
 	background-color: #f7f7f7;
-}
-
-.cell04{
-	border-left: 1px solid #cdcdcd;
-} 
-
-.cell09{
-	border-right: 1px solid #cdcdcd;
 }
 
 .cell10, .cell11{
@@ -205,8 +226,20 @@ table{
 .cell10, .cell11, .cell12{
 	text-align: right;
 	padding: 4px;
+	padding-right: 7px;
 }
 
 .cell01, .cell02, .cell03{
 	padding-left: 19px;
+}
+
+input{
+	width: 70px; height: 24px;
+	margin-left: 6px;
+	margin-right: 6px;
+	border: 1px solid #aeaeae;
+	border-radius: 4px;
+	background-color: #f4f4f4;
+	text-align: right;
+	padding-right: 5px;
 }
