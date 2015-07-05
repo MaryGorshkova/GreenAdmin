@@ -8,6 +8,8 @@
 
 #pages{
 	margin-top: 3px;
+	padding-left: 384px;
+	padding-right: 289px;
 	width: 1068px;
 	
 	em{
@@ -52,15 +54,17 @@
 }
 
 #content{
-	margin-top: 8px;
+
 	height: 100%;
 	width: 1068px;
-	box-shadow: 0 -5px 20px -15px #000000;
+	
 }
 
 .caption{
+	margin-top: 8px;
 	position: relative;
 	z-index: 1;
+	box-shadow: 0 -5px 20px -15px #000000;
 }
 
 .data{
@@ -268,3 +272,57 @@ table{
 .cell01, .cell02, .cell03{
 	padding-left: 19px;
 }
+
+
+//----hover----
+
+.activated{
+	background-color: #e4e4e4;
+}
+
+.activated_left{
+	background-position: 0 -40px;
+}
+
+.activated_right{
+  background-position: 0 -60px;
+}
+
+.action_left, .action_right{
+	width: 25px;
+	height: 100%;
+	position: relative;	
+
+	i{
+		background-image: url('../images/nav.png');
+  		background-repeat: no-repeat;
+  		width: 10px; height: 20px;
+  		display: inline-block;
+  		vertical-align: middle;
+  		text-align: center;
+  		position: absolute;
+  		top:14px;
+  		left: 7px;
+	}
+}
+
+.action_left{
+	box-shadow: inset 4px 0 20px -15px #000000;
+	i{background-position: 0 0;}
+}
+
+.amount .activated{
+	.action_left, .action_right{
+		background-color: #007900;
+	}
+}
+
+.action_right{
+	box-shadow: inset -4px 0 20px -15px #000000;
+	margin-left: 5px;
+	i{background-position: 0 -20px;}
+}
+
+// @import "compass/utilities/sprites";
+// @import "nav/*.png";
+// @include all-nav-sprites;
