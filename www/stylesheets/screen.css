@@ -700,62 +700,62 @@ table .amount td {
 /* line 221, ../sass/content.scss */
 .cell04 {
   box-shadow: inset 4px 0 20px -15px #000000;
+  -moz-box-shadow: inset 4px 0 20px -15px #000000;
   border-left: 1px solid #cdcdcd;
 }
 
-/* line 226, ../sass/content.scss */
+/* line 227, ../sass/content.scss */
 .cell09 {
   box-shadow: inset -4px 0 20px -15px #000000;
   -webkit-box-shadow: inset -4px 0 20px -15px #000000;
 }
 
-/* line 231, ../sass/content.scss */
+/* line 232, ../sass/content.scss */
 .cell10 {
   border-left: 1px solid #cbcbcb;
 }
 
-/* line 235, ../sass/content.scss */
+/* line 236, ../sass/content.scss */
 .cell05, .cell06, .cell07, .cell08 {
   width: 82px;
   background-color: #efefef;
   text-align: right;
 }
 
-/* line 241, ../sass/content.scss */
+/* line 242, ../sass/content.scss */
 .cell05, .cell07 {
   border-right: 1px solid #dfdfdf;
 }
 
-/* line 245, ../sass/content.scss */
+/* line 246, ../sass/content.scss */
 .merged {
   width: 162px;
 }
 
-/* line 249, ../sass/content.scss */
+/* line 250, ../sass/content.scss */
 .marg_cell {
   width: 5px;
   background-color: #f7f7f7;
 }
 
-/* line 254, ../sass/content.scss */
+/* line 255, ../sass/content.scss */
 .cell10, .cell11 {
   width: 81px;
 }
 
-/* line 258, ../sass/content.scss */
+/* line 259, ../sass/content.scss */
 .cell11, .cell12 {
   border-left: 1px solid #efefef;
 }
 
-/* line 262, ../sass/content.scss */
+/* line 263, ../sass/content.scss */
 .cell12 {
   width: 111px;
 }
 
-/* line 266, ../sass/content.scss */
+/* line 267, ../sass/content.scss */
 .cell10, .cell11, .cell12 {
   text-align: right;
-  padding: 4px;
   padding-right: 7px;
 }
 
@@ -821,6 +821,30 @@ table .amount td {
 /* line 323, ../sass/content.scss */
 .action_right i {
   background-position: 0 -20px;
+}
+
+/* line 330, ../sass/content.scss */
+#parent01 {
+  width: 414px;
+  float: left;
+}
+
+/* line 335, ../sass/content.scss */
+#parent02 {
+  width: 165px;
+  float: left;
+}
+
+/* line 340, ../sass/content.scss */
+#parent03 {
+  width: 170px;
+  float: left;
+}
+
+/* line 345, ../sass/content.scss */
+#parent04 {
+  width: 304px;
+  float: left;
 }
 
 /* line 14, ../sass/screen.scss */

@@ -220,6 +220,7 @@ table{
 
 .cell04{
 	box-shadow: inset 4px 0 20px -15px #000000;
+	-moz-box-shadow: inset 4px 0 20px -15px #000000;
 	border-left: 1px solid #cdcdcd;
 }
 
@@ -265,7 +266,6 @@ table{
 
 .cell10, .cell11, .cell12{
 	text-align: right;
-	padding: 4px;
 	padding-right: 7px;
 }
 
@@ -326,3 +326,23 @@ table{
 // @import "compass/utilities/sprites";
 // @import "nav/*.png";
 // @include all-nav-sprites;
+
+#parent01{
+	width: 384+30px;
+	float: left;;
+}
+
+#parent02{
+	width: 165px;
+	float: left;;
+}
+
+#parent03{
+	width: 170px;
+	float: left;
+}
+
+#parent04{
+	width: 304px;
+	float: left;
+}
