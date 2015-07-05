@@ -147,11 +147,43 @@ html, body{
 }
 
 #footer{
-	left: 82px; bottom: 0;
+	bottom: 0;
 	height: 50px;
 	width: 100%;
 	background-color: #ffffff;
 	box-shadow: 0 -5px 20px -15px #000000;
+	text-align: left;
+	padding-left: 19px;
+	position: relative;
+	font-size: 95%;
+	padding-top: 17px;
+
+	span{
+		color: #8b8b8b;
+		margin-left: 7px;
+	}
+
+	.stat{
+		float: right;
+		margin-right: 23px;
+	}
+
+	.save{
+		background-color: #8faa93;
+		border-radius: 4px;
+		padding: 8px;
+		color: #ffffff;
+		margin-left: 0;
+
+		i{
+			background-image: url("../images/save.png");
+			background-repeat: no-repeat;
+			width: 16px; height: 16px;
+			display: inline-block;
+			vertical-align: -3px;
+			margin-right: 5px;
+		}
+	}
 }
 
 // @import "compass/utilities/sprites";

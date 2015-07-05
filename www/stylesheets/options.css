@@ -156,24 +156,56 @@ html, body {
 
 /* line 149, ../sass/options.scss */
 #footer {
-  left: 82px;
   bottom: 0;
   height: 50px;
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 -5px 20px -15px #000000;
+  text-align: left;
+  padding-left: 19px;
+  position: relative;
+  font-size: 95%;
+  padding-top: 17px;
+}
+/* line 161, ../sass/options.scss */
+#footer span {
+  color: #8b8b8b;
+  margin-left: 7px;
+}
+/* line 166, ../sass/options.scss */
+#footer .stat {
+  float: right;
+  margin-right: 23px;
+}
+/* line 171, ../sass/options.scss */
+#footer .save {
+  background-color: #8faa93;
+  border-radius: 4px;
+  padding: 8px;
+  color: #ffffff;
+  margin-left: 0;
+}
+/* line 178, ../sass/options.scss */
+#footer .save i {
+  background-image: url("../images/save.png");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: -3px;
+  margin-right: 5px;
 }
 
-/* line 161, ../sass/options.scss */
+/* line 193, ../sass/options.scss */
 #filter {
   font-size: 93%;
   margin-top: 17px;
 }
-/* line 165, ../sass/options.scss */
+/* line 197, ../sass/options.scss */
 #filter div {
   position: relative;
 }
-/* line 169, ../sass/options.scss */
+/* line 201, ../sass/options.scss */
 #filter .title {
   width: auto;
   color: #acacac;
@@ -182,18 +214,18 @@ html, body {
   padding-right: 5px;
   font-size: 90%;
 }
-/* line 178, ../sass/options.scss */
+/* line 210, ../sass/options.scss */
 #filter .hrline {
   width: 100%;
   height: 1px;
   background-color: #dbdbdb;
   top: 10px;
 }
-/* line 184, ../sass/options.scss */
+/* line 216, ../sass/options.scss */
 #filter .row {
   margin-top: 10px;
 }
-/* line 187, ../sass/options.scss */
+/* line 219, ../sass/options.scss */
 #filter .row .search {
   width: 250px;
   height: 24px;
@@ -206,7 +238,7 @@ html, body {
   color: #868686;
   padding-left: 24px;
 }
-/* line 198, ../sass/options.scss */
+/* line 230, ../sass/options.scss */
 #filter .row .search i {
   width: 16px;
   height: 16px;
@@ -216,40 +248,40 @@ html, body {
   position: absolute;
   left: 5px;
 }
-/* line 207, ../sass/options.scss */
+/* line 239, ../sass/options.scss */
 #filter .row .search input {
   width: 100%;
   height: 100%;
   background-color: #f4f4f4;
   outline: none;
 }
-/* line 216, ../sass/options.scss */
+/* line 248, ../sass/options.scss */
 #filter .row .regions select, #filter .row .ASM select {
   width: 153px;
 }
-/* line 217, ../sass/options.scss */
+/* line 249, ../sass/options.scss */
 #filter .row .regions i, #filter .row .ASM i {
   left: 141px;
 }
-/* line 220, ../sass/options.scss */
+/* line 252, ../sass/options.scss */
 #filter .row .distr select, #filter .row .state select {
   width: 163px;
 }
-/* line 221, ../sass/options.scss */
+/* line 253, ../sass/options.scss */
 #filter .row .distr i, #filter .row .state i {
   left: 151px;
 }
-/* line 225, ../sass/options.scss */
+/* line 257, ../sass/options.scss */
 #filter .checks {
   margin-top: 12px;
 }
-/* line 228, ../sass/options.scss */
+/* line 260, ../sass/options.scss */
 #filter .checks span {
   position: relative;
   padding-left: 25px;
   margin-right: 13px;
 }
-/* line 233, ../sass/options.scss */
+/* line 265, ../sass/options.scss */
 #filter .checks span div {
   width: 20px;
   height: 20px;
@@ -260,7 +292,7 @@ html, body {
   left: 0px;
   top: -3px;
 }
-/* line 242, ../sass/options.scss */
+/* line 274, ../sass/options.scss */
 #filter .checks span div i {
   width: 13px;
   height: 10px;
