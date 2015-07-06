@@ -7,7 +7,7 @@ var columnsCount;
 
 function GetReady(){
 	columnsCount = 0;
-	SetHeight();
+	Show();
 }
 
 function Show(){
@@ -15,6 +15,9 @@ function Show(){
 		columnsCount = columnsCount + 1;
 		newColumn();
 	}
+	// if (window.innerWidth < (1150 + (170 * columnsCount))) {
+	// 	RemoveColumns();
+	// };
 
 	SetHeight();
 }
@@ -33,11 +36,11 @@ function SetHeight(){
 
 function newColumn(){
 	var cont = document.getElementById("content");
-	//alert(cont.offsetWidth);
-	cont.style.width = "1238px";
+	cont.style.width = (1068 + (170 * columnsCount)).toString() + "px";
 
 	var sample = document.getElementById("month_caption");
 	var newDiv = sample.cloneNode(true);
+	newDiv.id = "new_month";
 	var t = newDiv.childNodes[1].childNodes[1].childNodes[0].lastElementChild;
 	t.innerText = "Май 2015";
 	var caption = document.getElementById('row01');
@@ -45,11 +48,12 @@ function newColumn(){
 
 	var sample = document.getElementById("parent03");
 	var newElem = sample.cloneNode(true);
+	newElem.id = "parent03_new";
 	var row02 = document.getElementById("data");
 	row02.insertBefore(newElem, row02.childNodes[4]);
 
 	var pages = document.getElementById("pages");
-	pages.style.width = "1238px";
+	pages.style.width = (1068 + (170 * columnsCount)).toString() + "px";
 	pages.innerHTML = '<em>←</em>' +
 						'<span>01-02<div class="line"></div></span><span class="space"></span>' +
 						'<span class="selected">03-05<div class="line"></div></span><span class="space"></span>' +
@@ -57,4 +61,23 @@ function newColumn(){
 						'<span>9-11<div class="line"></div></span><span class="space"></span>' +
 						'<span>12<div class="line"></div></span><span class="space"></span>' +
 						'<em>→</em>';
+}
+
+function RemoveColumns(){
+	var w = window.innerWidth;
+	var wcount = 1150 + 170 * columnsCount;
+
+	while (w < wcount){
+		columnsCount = columnsCount -1;
+		var cont = document.getElementById("content");
+		cont.style.width = (1068 - (170 * columnsCount)).toString() + "px";
+
+		var sample = document.getElementById("new_month");
+		var caption = document.getElementById('row01');
+		caption.removeChild(sample);
+
+		var col = document.getElementById("parent03_new");
+		var data = document.getElementById("data");
+		data.removeChild(col);
+	}
 }

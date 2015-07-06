@@ -905,14 +905,14 @@ table .amount td {
 }
 
 /* line 376, ../sass/content.scss */
-#parent03 {
+#parent03, #parent03_new {
   width: 170px;
   float: left;
 }
 
 /* line 381, ../sass/content.scss */
 #parent04 {
-  width: 304px;
+  width: 300px;
   float: left;
 }
 
