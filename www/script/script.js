@@ -1,13 +1,25 @@
 
 // window.onresize = Show();
-// window.addEventListener('resize', Show, true);
-document.onLoad = Show();
+window.addEventListener('resize', Show, true);
+document.onLoad = GetReady();
+
+var columnsCount;
+
+function GetReady(){
+	columnsCount = 0;
+	SetHeight();
+}
 
 function Show(){
-	if ((window.innerWidth-1150) > 170){
+	if ((window.innerWidth-1150 - (170*columnsCount)) > 170){
+		columnsCount = columnsCount + 1;
 		newColumn();
 	}
-	
+
+	SetHeight();
+}
+
+function SetHeight(){
 	if (window.innerHeight > 600){
 		var h = window.innerHeight - 350;	
 		var data = document.getElementById('data');
