@@ -81,3 +81,77 @@ function RemoveColumns(){
 		data.removeChild(col);
 	}
 }
+
+function overLeft(){
+	var divArr = document.getElementsByClassName("action_left");
+	for (item in divArr){
+		var n = divArr[item];
+
+		if (n.className=="action_left green"){
+			n.className = "action_left green_activated";
+		}
+		else{
+			n.className = "action_left activated";
+		}		
+	}
+
+	var row2Amount = document.getElementsByClassName("action_left green");
+	row2Amount.className = "action_left green_activated";
+
+	var arrow = document.getElementById("left_arrow");
+	arrow.className = "activated_left";
+}
+
+function outLeft(){
+	var divArr = document.getElementsByClassName("action_left");
+	for (item in divArr){
+		var n = divArr[item];
+
+		if (n.className=="action_left green_activated"){
+			n.className = "action_left green";
+		}
+		else{
+			n.className = "action_left";
+		}		
+	}
+
+	var arrow = document.getElementById("left_arrow");
+	arrow.className = "";
+}
+
+function overRight(){
+	var divArr = document.getElementsByClassName("action_right");
+	for (item in divArr){
+		var n = divArr[item];
+
+		if (n.className=="action_right green"){
+			n.className = "action_right green_activated";
+		}
+		else{
+			n.className = "action_right activated";
+		}		
+	}
+
+	var row2Amount = document.getElementsByClassName("action_right green");
+	row2Amount.className = "action_right green_activated";
+
+	var arrow = document.getElementById("right_arrow");
+	arrow.className = "activated_right";
+}
+
+function outRight(){
+	var divArr = document.getElementsByClassName("action_right");
+	for (item in divArr){
+		var n = divArr[item];
+
+		if (n.className=="action_right green_activated"){
+			n.className = "action_right green";
+		}
+		else{
+			n.className = "action_right";
+		}		
+	}
+
+	var arrow = document.getElementById("right_arrow");
+	arrow.className = "";
+}

@@ -316,12 +316,8 @@ table{
 	background-color: #e4e4e4;
 }
 
-.activated_left{
-	background-position: 0 -40px;
-}
-
-.activated_right{
-  background-position: 0 -60px;
+.green_activated{
+	background-color: #007900;
 }
 
 .action_left, .action_right{
@@ -339,6 +335,14 @@ table{
   		position: absolute;
   		top:14px;
   		left: 7px;
+	}
+
+	.activated_left{
+		background-position: 0 -40px;
+	}
+
+	.activated_right{
+	  background-position: 0 -60px;
 	}
 }
 

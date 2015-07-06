@@ -342,22 +342,17 @@ table .amount td {
 }
 
 /* line 319, ../sass/content.scss */
-.activated_left {
-  background-position: 0 -40px;
+.green_activated {
+  background-color: #007900;
 }
 
 /* line 323, ../sass/content.scss */
-.activated_right {
-  background-position: 0 -60px;
-}
-
-/* line 327, ../sass/content.scss */
 .action_left, .action_right {
   width: 25px;
   height: 100%;
   position: relative;
 }
-/* line 332, ../sass/content.scss */
+/* line 328, ../sass/content.scss */
 .action_left i, .action_right i {
   background-image: url("../images/nav.png");
   background-repeat: no-repeat;
@@ -370,50 +365,58 @@ table .amount td {
   top: 14px;
   left: 7px;
 }
+/* line 340, ../sass/content.scss */
+.action_left .activated_left, .action_right .activated_left {
+  background-position: 0 -40px;
+}
+/* line 344, ../sass/content.scss */
+.action_left .activated_right, .action_right .activated_right {
+  background-position: 0 -60px;
+}
 
-/* line 345, ../sass/content.scss */
+/* line 349, ../sass/content.scss */
 .action_left {
   box-shadow: inset 4px 0 20px -15px #000000;
 }
-/* line 347, ../sass/content.scss */
+/* line 351, ../sass/content.scss */
 .action_left i {
   background-position: 0 0;
 }
 
-/* line 351, ../sass/content.scss */
+/* line 355, ../sass/content.scss */
 .amount .activated .action_left, .amount .activated .action_right {
   background-color: #007900;
 }
 
-/* line 356, ../sass/content.scss */
+/* line 360, ../sass/content.scss */
 .action_right {
   box-shadow: inset -4px 0 20px -15px #000000;
   margin-left: 5px;
 }
-/* line 359, ../sass/content.scss */
+/* line 363, ../sass/content.scss */
 .action_right i {
   background-position: 0 -20px;
 }
 
-/* line 366, ../sass/content.scss */
+/* line 370, ../sass/content.scss */
 #parent01 {
   width: 414px;
   float: left;
 }
 
-/* line 371, ../sass/content.scss */
+/* line 375, ../sass/content.scss */
 #parent02 {
   width: 165px;
   float: left;
 }
 
-/* line 376, ../sass/content.scss */
+/* line 380, ../sass/content.scss */
 #parent03, #parent03_new {
   width: 170px;
   float: left;
 }
 
-/* line 381, ../sass/content.scss */
+/* line 385, ../sass/content.scss */
 #parent04 {
   width: 300px;
   float: left;
