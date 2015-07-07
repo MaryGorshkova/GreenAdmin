@@ -155,3 +155,14 @@ function outRight(){
 	var arrow = document.getElementById("right_arrow");
 	arrow.className = "";
 }
+
+
+//-----------------input-----------------
+
+function onFocus(element){
+	element.className = "focused";
+}
+
+function onBlur(element){
+	element.className = "";
+}

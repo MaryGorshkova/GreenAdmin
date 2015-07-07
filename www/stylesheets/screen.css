@@ -611,31 +611,37 @@ table td input {
   text-align: right;
   padding-right: 5px;
   box-shadow: inset 0px 3px 10px -8px #000000;
+  outline: none;
 }
 /* line 108, ../sass/content.scss */
+table td .focused {
+  background-color: #ffffff;
+  box-shadow: none;
+}
+/* line 114, ../sass/content.scss */
 table .sort {
   font-weight: bold;
   color: #000000;
 }
-/* line 113, ../sass/content.scss */
+/* line 119, ../sass/content.scss */
 table .sortable {
   cursor: pointer;
 }
-/* line 116, ../sass/content.scss */
+/* line 122, ../sass/content.scss */
 table .sortable span {
   position: relative;
   cursor: pointer;
 }
-/* line 121, ../sass/content.scss */
+/* line 127, ../sass/content.scss */
 table .sortable span:hover {
   color: #737373;
   cursor: pointer;
 }
-/* line 125, ../sass/content.scss */
+/* line 131, ../sass/content.scss */
 table .sortable span:hover .line {
   border-top: 1px dashed #737373;
 }
-/* line 130, ../sass/content.scss */
+/* line 136, ../sass/content.scss */
 table .sortable .line {
   height: 1px;
   width: 100%;
@@ -649,207 +655,207 @@ table .sortable .line {
   border-top: 1px dashed #ffffff;
   cursor: pointer;
 }
-/* line 146, ../sass/content.scss */
+/* line 152, ../sass/content.scss */
 table .amount {
   background-color: #008200;
   height: 24px;
 }
-/* line 150, ../sass/content.scss */
+/* line 156, ../sass/content.scss */
 table .amount .cell05, table .amount .cell07 {
   border-right: 1px solid #008200;
 }
-/* line 154, ../sass/content.scss */
+/* line 160, ../sass/content.scss */
 table .amount .cell04 {
   border-left: 1px solid #006700;
 }
-/* line 158, ../sass/content.scss */
+/* line 164, ../sass/content.scss */
 table .amount .cell09 {
   border-right: 1px solid #006700;
 }
-/* line 162, ../sass/content.scss */
+/* line 168, ../sass/content.scss */
 table .amount .cell01, table .amount .cell12 {
   color: #f8f8f8;
   font-weight: bold;
 }
-/* line 167, ../sass/content.scss */
+/* line 173, ../sass/content.scss */
 table .amount .cell11, table .amount .cell12 {
   border: none;
 }
-/* line 171, ../sass/content.scss */
+/* line 177, ../sass/content.scss */
 table .amount .cell05, table .amount .cell06, table .amount .cell07, table .amount .cell08, table .amount .cell10, table .amount .cell11 {
   color: #dddddd;
   padding-right: 7px;
 }
-/* line 176, ../sass/content.scss */
+/* line 182, ../sass/content.scss */
 table .amount td {
   background-color: inherit;
 }
 
-/* line 182, ../sass/content.scss */
+/* line 188, ../sass/content.scss */
 .row1 {
   height: 48px;
   color: #a3a3a3;
   font-weight: bold;
 }
-/* line 187, ../sass/content.scss */
+/* line 193, ../sass/content.scss */
 .row1 .big {
   padding: 0;
   width: 162px;
   border-spacing: 0px;
   border-left: 1px solid #cdcdcd;
 }
-/* line 193, ../sass/content.scss */
+/* line 199, ../sass/content.scss */
 .row1 .big td {
   padding-right: 4px;
 }
-/* line 197, ../sass/content.scss */
+/* line 203, ../sass/content.scss */
 .row1 .big .cell10 {
   border: none;
 }
-/* line 200, ../sass/content.scss */
+/* line 206, ../sass/content.scss */
 .row1 .big1 {
   width: 165;
   background-color: #f7f7f7;
 }
-/* line 204, ../sass/content.scss */
+/* line 210, ../sass/content.scss */
 .row1 .big1 td {
   padding-right: 4px;
 }
-/* line 209, ../sass/content.scss */
+/* line 215, ../sass/content.scss */
 .row1 table {
   color: inherit;
   background-color: inherit;
 }
-/* line 213, ../sass/content.scss */
+/* line 219, ../sass/content.scss */
 .row1 table td {
   text-align: right;
   font-size: 103%;
   font-weight: bold;
 }
-/* line 219, ../sass/content.scss */
+/* line 225, ../sass/content.scss */
 .row1 table .cell05, .row1 table .cell06, .row1 table .cell07, .row1 table .cell08, .row1 table .cell10, .row1 table .cell11 {
   font-size: 90%;
 }
-/* line 225, ../sass/content.scss */
+/* line 231, ../sass/content.scss */
 .row1 .cell12 {
   width: 126px;
   text-align: center;
 }
-/* line 230, ../sass/content.scss */
+/* line 236, ../sass/content.scss */
 .row1 .cell05, .row1 .cell07 {
   border-right: 1px solid #efefef;
 }
-/* line 234, ../sass/content.scss */
+/* line 240, ../sass/content.scss */
 .row1 .cell05, .row1 .cell06, .row1 .cell07, .row1 .cell08 {
   width: 82px;
   background-color: #f7f7f7;
 }
 
-/* line 240, ../sass/content.scss */
+/* line 246, ../sass/content.scss */
 .cell01 {
   width: 144px;
 }
 
-/* line 244, ../sass/content.scss */
+/* line 250, ../sass/content.scss */
 .cell02 {
   width: 155px;
 }
 
-/* line 248, ../sass/content.scss */
+/* line 254, ../sass/content.scss */
 .cell03 {
   width: 85px;
 }
 
-/* line 252, ../sass/content.scss */
+/* line 258, ../sass/content.scss */
 .cell04, .cell09 {
   width: 30px;
   background-color: #f7f7f7;
 }
 
-/* line 257, ../sass/content.scss */
+/* line 263, ../sass/content.scss */
 .cell04 {
   box-shadow: inset 4px 0 20px -15px #000000;
   -moz-box-shadow: inset 4px 0 20px -15px #000000;
   border-left: 1px solid #cdcdcd;
 }
 
-/* line 263, ../sass/content.scss */
+/* line 269, ../sass/content.scss */
 .cell09 {
   box-shadow: inset -4px 0 20px -15px #000000;
   -webkit-box-shadow: inset -4px 0 20px -15px #000000;
 }
 
-/* line 268, ../sass/content.scss */
+/* line 274, ../sass/content.scss */
 .cell10 {
   border-left: 1px solid #cbcbcb;
 }
 
-/* line 272, ../sass/content.scss */
+/* line 278, ../sass/content.scss */
 .cell05, .cell06, .cell07, .cell08 {
   width: 82px;
   background-color: #efefef;
   text-align: right;
 }
 
-/* line 278, ../sass/content.scss */
+/* line 284, ../sass/content.scss */
 .cell05, .cell07 {
   border-right: 1px solid #dfdfdf;
 }
 
-/* line 282, ../sass/content.scss */
+/* line 288, ../sass/content.scss */
 .merged {
   width: 162px;
 }
 
-/* line 286, ../sass/content.scss */
+/* line 292, ../sass/content.scss */
 .marg_cell {
   width: 5px;
   background-color: #f7f7f7;
 }
 
-/* line 291, ../sass/content.scss */
+/* line 297, ../sass/content.scss */
 .cell10, .cell11 {
   width: 81px;
 }
 
-/* line 295, ../sass/content.scss */
+/* line 301, ../sass/content.scss */
 .cell11, .cell12 {
   border-left: 1px solid #efefef;
 }
 
-/* line 299, ../sass/content.scss */
+/* line 305, ../sass/content.scss */
 .cell12 {
   width: 111px;
 }
 
-/* line 303, ../sass/content.scss */
+/* line 309, ../sass/content.scss */
 .cell10, .cell11, .cell12 {
   text-align: right;
   padding-right: 7px;
 }
 
-/* line 308, ../sass/content.scss */
+/* line 314, ../sass/content.scss */
 .cell01, .cell02, .cell03 {
   padding-left: 19px;
 }
 
-/* line 315, ../sass/content.scss */
+/* line 321, ../sass/content.scss */
 .activated {
   background-color: #e4e4e4;
 }
 
-/* line 319, ../sass/content.scss */
+/* line 325, ../sass/content.scss */
 .green_activated {
   background-color: #007900;
 }
 
-/* line 323, ../sass/content.scss */
+/* line 329, ../sass/content.scss */
 .action_left, .action_right {
   width: 25px;
   height: 100%;
   position: relative;
 }
-/* line 328, ../sass/content.scss */
+/* line 334, ../sass/content.scss */
 .action_left i, .action_right i {
   background-image: url("../images/nav.png");
   background-repeat: no-repeat;
@@ -862,58 +868,58 @@ table .amount td {
   top: 14px;
   left: 7px;
 }
-/* line 340, ../sass/content.scss */
+/* line 346, ../sass/content.scss */
 .action_left .activated_left, .action_right .activated_left {
   background-position: 0 -40px;
 }
-/* line 344, ../sass/content.scss */
+/* line 350, ../sass/content.scss */
 .action_left .activated_right, .action_right .activated_right {
   background-position: 0 -60px;
 }
 
-/* line 349, ../sass/content.scss */
+/* line 355, ../sass/content.scss */
 .action_left {
   box-shadow: inset 4px 0 20px -15px #000000;
 }
-/* line 351, ../sass/content.scss */
+/* line 357, ../sass/content.scss */
 .action_left i {
   background-position: 0 0;
 }
 
-/* line 355, ../sass/content.scss */
+/* line 361, ../sass/content.scss */
 .amount .activated .action_left, .amount .activated .action_right {
   background-color: #007900;
 }
 
-/* line 360, ../sass/content.scss */
+/* line 366, ../sass/content.scss */
 .action_right {
   box-shadow: inset -4px 0 20px -15px #000000;
   margin-left: 5px;
 }
-/* line 363, ../sass/content.scss */
+/* line 369, ../sass/content.scss */
 .action_right i {
   background-position: 0 -20px;
 }
 
-/* line 370, ../sass/content.scss */
+/* line 376, ../sass/content.scss */
 #parent01 {
   width: 414px;
   float: left;
 }
 
-/* line 375, ../sass/content.scss */
+/* line 381, ../sass/content.scss */
 #parent02 {
   width: 165px;
   float: left;
 }
 
-/* line 380, ../sass/content.scss */
+/* line 386, ../sass/content.scss */
 #parent03, #parent03_new {
   width: 170px;
   float: left;
 }
 
-/* line 385, ../sass/content.scss */
+/* line 391, ../sass/content.scss */
 #parent04 {
   width: 300px;
   float: left;
