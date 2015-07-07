@@ -4,16 +4,34 @@ window.addEventListener('resize', Show, true);
 document.onLoad = GetReady();
 
 var columnsCount;
-var firstMonth = 0;
+var firstMonth;
+var lastMonth;
+var month_dictionary;
 
 function GetReady(){
 	columnsCount = 0;
-	firstMonth = 3;
-	//SetMonth();
+	firstMonth = 2;
+	lastMonth = 3;
 	Show();
 }
 
+function SetMonth(){
+	month_dictionary = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+	var atScreenQty = 2 + columnsCount;
+
+	for (var i = firstMonth; i < lastMonth; i++) {
+		var cap = document.getElementById('month_' + i);
+		t = cap.childNodes[1].childNodes[1].childNodes[0].lastElementChild;
+		t.innerText = month_dictionary[i] + " -2015";
+	};
+
+	// var t = newDiv.childNodes[1].childNodes[1].childNodes[0].lastElementChild;
+	// t.innerText = "Май 2015";
+}
+
 function Show(){
+	SetMonth();
+
 	if ((window.innerWidth-1150 - (170*columnsCount)) > 170){
 		columnsCount = columnsCount + 1;
 		newColumn();
@@ -41,20 +59,25 @@ function newColumn(){
 	var cont = document.getElementById("content");
 	cont.style.width = (1068 + (170 * columnsCount)).toString() + "px";
 
-	var sample = document.getElementById("month_caption");
+	//captions
+	var sample = document.getElementsByClassName("big1");
+	sample = sample[0];
 	var newDiv = sample.cloneNode(true);
 	newDiv.id = "new_month";
-	var t = newDiv.childNodes[1].childNodes[1].childNodes[0].lastElementChild;
-	t.innerText = "Май 2015";
+	// var t = newDiv.childNodes[1].childNodes[1].childNodes[0].lastElementChild;
+	// t.innerText = "Май 2015";
 	var caption = document.getElementById('row01');
 	caption.insertBefore(newDiv, caption.childNodes[13]);
 
+
+	//data column
 	var sample = document.getElementById("parent03");
 	var newElem = sample.cloneNode(true);
 	newElem.id = "parent03_new";
 	var row02 = document.getElementById("data");
 	row02.insertBefore(newElem, row02.childNodes[4]);
 
+	//pages
 	var pages = document.getElementById("pages");
 	pages.style.width = (1068 + (170 * columnsCount)).toString() + "px";
 	pages.innerHTML = '<em>←</em>' +
