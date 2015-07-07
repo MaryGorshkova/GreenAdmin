@@ -40,6 +40,8 @@ function Show(){
 	SetHeight();
 
 	SetMonth();
+
+	SetPages();
 }
 
 function SetHeight(){
@@ -77,20 +79,57 @@ function newColumn(){
 	var row02 = document.getElementById("data");
 	row02.insertBefore(newElem, row02.childNodes[4]);
 
-	//pages
+}
+
+function SetPages () {
 	var pages = document.getElementById("pages");
 	pages.style.width = (1068 + (170 * columnsCount)).toString() + "px";
 	pages.innerHTML = innerHTMLtext();
 }
 
 function innerHTMLtext(){
-	return '<em>←</em>' +
-						'<span>01-02<div class="line"></div></span><span class="space"></span>' +
-						'<span class="selected">03-05<div class="line"></div></span><span class="space"></span>' +
-						'<span>06-08<div class="line"></div></span><span class="space"></span>' +
-						'<span>9-11<div class="line"></div></span><span class="space"></span>' +
-						'<span>12<div class="line"></div></span><span class="space"></span>' +
-						'<em>→</em>';
+
+	var str = '<span class="selected">'+ number(firstMonth) + "-" + number(lastMonth) +'<div class="line"></div></span><span class="space"></span>';
+	
+	var step = parseInt(lastMonth) - firstMonth + 1;
+	var rest = firstMonth;
+	while ( (rest - step) >= 0) {
+		str = '<span>'+ number(rest - step) + "-" + number(rest - 1) +'<div class="line"></div></span><span class="space"></span>' + str;
+		rest = rest - step;
+	};
+	if (rest > 0){
+		if (rest == 1)
+			str = '<span>'+ number(rest - 1) + '<div class="line"></div></span><span class="space"></span>' + str;
+		else
+			str = '<span>'+ number(0) + "-" + number(rest - 1) +'<div class="line"></div></span><span class="space"></span>' + str;
+	}
+
+	rest = 11 - lastMonth;
+	var previousMonth = lastMonth;
+	while ((previousMonth + step) <= 11){
+		str = str + '<span>'+ number(previousMonth + 1) + "-" + number(previousMonth + step) + '<div class="line"></div></span><span class="space"></span>';
+		rest = rest - step - 1;
+		previousMonth = previousMonth + step;
+	}
+	if (previousMonth + 1 <= 11){
+		if (previousMonth + 1 == 11)
+			str = str + '<span>'+ number(11) + '<div class="line"></div></span><span class="space"></span>';
+		else
+			str = str + '<span>'+ number(previousMonth + 1) + "-" + number(11) + '<div class="line"></div></span><span class="space"></span>';
+	}
+
+	return str;
+
+}
+
+function number(index){
+	var n = parseInt(index) + 1;
+	if (n.toString().length < 2) {
+		return "0" + n;
+	}
+	else{
+		return n;
+	};
 }
 
 function findChild(caption){
@@ -142,6 +181,7 @@ function moveLeft(){
 	lastMonth = parseInt(lastMonth) - 1;
 
 	SetMonth();
+	SetPages();
 }
 
 function moveRight(){
@@ -159,6 +199,7 @@ function moveRight(){
 	lastMonth = parseInt(lastMonth) + 1;
 
 	SetMonth();
+	SetPages();
 }
 
 function overLeft(){
