@@ -4,9 +4,12 @@ window.addEventListener('resize', Show, true);
 document.onLoad = GetReady();
 
 var columnsCount;
+var firstMonth = 0;
 
 function GetReady(){
 	columnsCount = 0;
+	firstMonth = 3;
+	//SetMonth();
 	Show();
 }
 
@@ -15,9 +18,9 @@ function Show(){
 		columnsCount = columnsCount + 1;
 		newColumn();
 	}
-	// if (window.innerWidth < (1150 + (170 * columnsCount))) {
-	// 	RemoveColumns();
-	// };
+	if (window.innerWidth < (1150 + (170 * columnsCount))) {
+		RemoveColumns();
+	};
 
 	SetHeight();
 }
@@ -67,10 +70,10 @@ function RemoveColumns(){
 	var w = window.innerWidth;
 	var wcount = 1150 + 170 * columnsCount;
 
-	while (w < wcount){
+	while (w < (1150 + 170 * columnsCount) && w > 1150){
 		columnsCount = columnsCount -1;
 		var cont = document.getElementById("content");
-		cont.style.width = (1068 - (170 * columnsCount)).toString() + "px";
+		cont.style.width = (1068 + (170 * columnsCount)).toString() + "px";
 
 		var sample = document.getElementById("new_month");
 		var caption = document.getElementById('row01');
@@ -79,8 +82,15 @@ function RemoveColumns(){
 		var col = document.getElementById("parent03_new");
 		var data = document.getElementById("data");
 		data.removeChild(col);
+
+		var pages = document.getElementById("pages");
+		pages.style.width = (1068 + (170 * columnsCount)).toString() + "px";
 	}
 }
+
+
+//------------navigation buttons-------------
+
 
 function overLeft(){
 	var divArr = document.getElementsByClassName("action_left");
