@@ -127,8 +127,45 @@ function RemoveColumns(){
 
 //------------navigation buttons-------------
 
+function moveLeft(){
+	
+	if (firstMonth == 0){
+		return;
+	};
+
+	for (var i = lastMonth; i >= firstMonth; i--) {
+		var element = document.getElementById("month_" + i);
+		element.id = "month_" + (parseInt(i) - 1);
+	};
+
+	firstMonth = parseInt(firstMonth) - 1;
+	lastMonth = parseInt(lastMonth) - 1;
+
+	SetMonth();
+}
+
+function moveRight(){
+	
+	if (lastMonth == 11){
+		return;
+	};
+
+	for (var i = lastMonth; i >= firstMonth; i--) {
+		var element = document.getElementById("month_" + i);
+		element.id = "month_" + (parseInt(i) + 1);
+	};
+
+	firstMonth = parseInt(firstMonth) + 1;
+	lastMonth = parseInt(lastMonth) + 1;
+
+	SetMonth();
+}
 
 function overLeft(){
+	if (firstMonth == 0) {
+		return;
+	};
+
 	var divArr = document.getElementsByClassName("action_left");
 	for (item in divArr){
 		var n = divArr[item];
@@ -166,6 +203,10 @@ function outLeft(){
 }
 
 function overRight(){
+	if (lastMonth == 11){
+		return;
+	}
+
 	var divArr = document.getElementsByClassName("action_right");
 	for (item in divArr){
 		var n = divArr[item];
