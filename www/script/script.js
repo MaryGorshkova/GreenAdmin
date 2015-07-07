@@ -1,5 +1,5 @@
 
-// window.onresize = Show();
+
 window.addEventListener('resize', Show, true);
 document.onLoad = GetReady();
 
@@ -19,20 +19,17 @@ function SetMonth(){
 	month_dictionary = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 	var atScreenQty = 2 + columnsCount;
 
-	for (var i = firstMonth; i < lastMonth; i++) {
+	for (var i = firstMonth; i <= lastMonth; i++) {
 		var cap = document.getElementById('month_' + i);
 		t = cap.childNodes[1].childNodes[1].childNodes[0].lastElementChild;
-		t.innerText = month_dictionary[i] + " -2015";
+		t.innerText = month_dictionary[i] + " 2015";
 	};
 
-	// var t = newDiv.childNodes[1].childNodes[1].childNodes[0].lastElementChild;
-	// t.innerText = "Май 2015";
 }
 
-function Show(){
-	SetMonth();
+function Show(){	
 
-	if ((window.innerWidth-1150 - (170*columnsCount)) > 170){
+	while ((window.innerWidth-1150 - (170*columnsCount)) > 170){
 		columnsCount = columnsCount + 1;
 		newColumn();
 	}
@@ -41,6 +38,8 @@ function Show(){
 	};
 
 	SetHeight();
+
+	SetMonth();
 }
 
 function SetHeight(){
@@ -63,11 +62,12 @@ function newColumn(){
 	var sample = document.getElementsByClassName("big1");
 	sample = sample[0];
 	var newDiv = sample.cloneNode(true);
-	newDiv.id = "new_month";
+	newDiv.id = "month_" + (parseInt(lastMonth) +1);
 	// var t = newDiv.childNodes[1].childNodes[1].childNodes[0].lastElementChild;
 	// t.innerText = "Май 2015";
 	var caption = document.getElementById('row01');
-	caption.insertBefore(newDiv, caption.childNodes[13]);
+	caption.insertBefore(newDiv, caption.childNodes[findChild(caption)]);
+	lastMonth = parseInt(lastMonth) + 1;
 
 
 	//data column
@@ -80,13 +80,25 @@ function newColumn(){
 	//pages
 	var pages = document.getElementById("pages");
 	pages.style.width = (1068 + (170 * columnsCount)).toString() + "px";
-	pages.innerHTML = '<em>←</em>' +
+	pages.innerHTML = innerHTMLtext();
+}
+
+function innerHTMLtext(){
+	return '<em>←</em>' +
 						'<span>01-02<div class="line"></div></span><span class="space"></span>' +
 						'<span class="selected">03-05<div class="line"></div></span><span class="space"></span>' +
 						'<span>06-08<div class="line"></div></span><span class="space"></span>' +
 						'<span>9-11<div class="line"></div></span><span class="space"></span>' +
 						'<span>12<div class="line"></div></span><span class="space"></span>' +
 						'<em>→</em>';
+}
+
+function findChild(caption){
+	for (var i = 0; i <= caption.childNodes.length; i++) {
+		if (caption.childNodes[parseInt(i)].nextSibling.id == "cell09_caption"){
+			return i;
+		};
+	};
 }
 
 function RemoveColumns(){
@@ -98,9 +110,10 @@ function RemoveColumns(){
 		var cont = document.getElementById("content");
 		cont.style.width = (1068 + (170 * columnsCount)).toString() + "px";
 
-		var sample = document.getElementById("new_month");
+		var sample = document.getElementById("month_" + lastMonth);
 		var caption = document.getElementById('row01');
 		caption.removeChild(sample);
+		lastMonth = parseInt(lastMonth) - 1;
 
 		var col = document.getElementById("parent03_new");
 		var data = document.getElementById("data");
