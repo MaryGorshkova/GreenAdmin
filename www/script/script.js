@@ -89,36 +89,36 @@ function SetPages () {
 
 function innerHTMLtext(){
 
-	var str = '<span class="selected">'+ number(firstMonth) + "-" + number(lastMonth) +'<div class="line"></div></span><span class="space"></span>';
+	var str = '<span onclick="changePage(this)" Id="'+ firstMonth +'"" class="selected">'+ number(firstMonth) + "-" + number(lastMonth) +'<div class="line"></div></span><span class="space"></span>';
 	
 	var step = parseInt(lastMonth) - firstMonth + 1;
 	var rest = firstMonth;
 	while ( (rest - step) >= 0) {
-		str = '<span>'+ number(rest - step) + "-" + number(rest - 1) +'<div class="line"></div></span><span class="space"></span>' + str;
+		str = '<span onclick="changePage(this)" Id="'+ (rest - step) +'">'+ number(rest - step) + "-" + number(rest - 1) +'<div class="line"></div></span><span class="space"></span>' + str;
 		rest = rest - step;
 	};
 	if (rest > 0){
 		if (rest == 1)
-			str = '<span>'+ number(rest - 1) + '<div class="line"></div></span><span class="space"></span>' + str;
+			str = '<span onclick="changePage(this)" Id="'+ (rest - 1) +'">'+ number(rest - 1) + '<div class="line"></div></span><span class="space"></span>' + str;
 		else
-			str = '<span>'+ number(0) + "-" + number(rest - 1) +'<div class="line"></div></span><span class="space"></span>' + str;
+			str = '<span onclick="changePage(this)" Id="'+ 0 +'">'+ number(0) + "-" + number(rest - 1) +'<div class="line"></div></span><span class="space"></span>' + str;
 	}
 
 	rest = 11 - lastMonth;
 	var previousMonth = lastMonth;
 	while ((previousMonth + step) <= 11){
-		str = str + '<span>'+ number(previousMonth + 1) + "-" + number(previousMonth + step) + '<div class="line"></div></span><span class="space"></span>';
+		str = str + '<span onclick="changePage(this)" Id="'+ (previousMonth + 1) +'">'+ number(previousMonth + 1) + "-" + number(previousMonth + step) + '<div class="line"></div></span><span class="space"></span>';
 		rest = rest - step - 1;
 		previousMonth = previousMonth + step;
 	}
 	if (previousMonth + 1 <= 11){
 		if (previousMonth + 1 == 11)
-			str = str + '<span>'+ number(11) + '<div class="line"></div></span><span class="space"></span>';
+			str = str + '<span onclick="changePage(this)" Id="'+ 11 +'">'+ number(11) + '<div class="line"></div></span><span class="space"></span>';
 		else
-			str = str + '<span>'+ number(previousMonth + 1) + "-" + number(11) + '<div class="line"></div></span><span class="space"></span>';
+			str = str + '<span onclick="changePage(this)" Id="'+ (previousMonth + 1) +'">'+ number(previousMonth + 1) + "-" + number(11) + '<div class="line"></div></span><span class="space"></span>';
 	}
 
-	return str;
+	return '<em>←</em>' + str + '<em>→</em>';
 
 }
 
@@ -130,6 +130,23 @@ function number(index){
 	else{
 		return n;
 	};
+}
+
+function changePage(sender){
+	var month = parseInt(sender.id);
+
+	for (var i = firstMonth; i <= lastMonth; i++) {
+		var element = document.getElementById("month_" + i);
+		element.id = "month_" + month;
+		month = month + 1;
+	};
+
+	var step = lastMonth - firstMonth;
+	firstMonth = parseInt(sender.id);
+	lastMonth = firstMonth + step;
+
+	SetMonth();
+	SetPages();
 }
 
 function findChild(caption){
